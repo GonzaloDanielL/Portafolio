@@ -42,7 +42,7 @@ function App() {
         <div className='about-cabecera'>
           <h1>Gonzalo Luna</h1>
           <div className='about-button'>
-            <a href='../GonzaloCV.pdf' target='_blank'>Descargar CV</a>
+            <a href='./GonzaloCV.pdf' target='_blank'>Descargar CV</a>
           </div>
         </div>
         <div className='about-body'>
@@ -57,12 +57,12 @@ function App() {
             </div>
           </div>
           <div className='about-body-img'>
-            <img src="../foto.png" alt="" />
+            <img src="./foto.png" alt="" />
           </div>
         </div>
       </header>
 
-      <hr className='separador'/>
+      <hr className='separador' />
 
       <section className='sub-container c-2' id='projects'>
         <div className='projects-title'>
@@ -70,18 +70,20 @@ function App() {
         </div>
 
         <div className='projects-container'>
-          <Project img="../sistemajgya.png" tipo="bloqueado" github="https://github.com/" title="Sistema JGyA" des="Proyecto para la administración de productos como el registro, venta y la compra del mismo, la aplicación también muestra gráficos con los datos registrados" tec={["HTML", "CSS", "PHP", "Bootstrap", "JavaScript", "jQuery", "MySQL"]} />
+          <Project img="./portafolio.png" tipo="enlace" link="https://gonzalodaniell.github.io/Portafolio/" github="https://github.com/GonzaloDanielL/Portafolio" title="Sistema JGyA" des="Portafolio web" tec={["HTML", "CSS", "JavaScript", "ReactJS"]} />
 
-          <Project img="../mealscocktails.png" tipo="enlace" link="https://gonzalodaniell.github.io/MealsAndCocktails/" github="https://github.com/GonzaloDanielL/MealsAndCocktails" title="Meals and cocktails" des="Proyecto personal que lista y muestra recetas y ingredientes de comidas y cócteles" tec={["HTML", "CSS", "ReactJS", "JavaScript", "Tailwind CSS"]} />
+          <Project img="./sistemajgya.png" tipo="bloqueado" github="https://github.com/" title="Sistema JGyA" des="Proyecto para la administración de productos como el registro, venta y la compra del mismo, la aplicación también muestra gráficos con los datos registrados" tec={["HTML", "CSS", "PHP", "Bootstrap", "JavaScript", "jQuery", "MySQL"]} />
 
-          <Project img="../animedetails.png" tipo="enlace" link="https://gonzalodaniell.github.io/Anime-Details/" github="https://github.com/GonzaloDanielL/Anime-Details" title="Anime details" des="Proyecto personal que lista animes y muestra su información como capítulos, genero, plataformas de streaming, etc" tec={["HTML", "CSS", "ReactJS", "JavaScript"]} />
+          <Project img="./mealscocktails.png" tipo="enlace" link="https://gonzalodaniell.github.io/MealsAndCocktails/" github="https://github.com/GonzaloDanielL/MealsAndCocktails" title="Meals and cocktails" des="Proyecto personal que lista y muestra recetas y ingredientes de comidas y cócteles" tec={["HTML", "CSS", "ReactJS", "JavaScript", "Tailwind CSS"]} />
 
-          <Project img="../conteo.png" tipo="enlace" link="https://gonzalodaniell.github.io/Conteo-Dinero/" github="https://github.com/GonzaloDanielL/Conteo-Dinero" title="Suma y conteo (S/.)" des="Proyecto personal para sumar dinero" tec={["HTML", "CSS", "ReactJS", "JavaScript", "Tailwind CSS"]} />
+          <Project img="./animedetails.png" tipo="enlace" link="https://gonzalodaniell.github.io/Anime-Details/" github="https://github.com/GonzaloDanielL/Anime-Details" title="Anime details" des="Proyecto personal que lista animes y muestra su información como capítulos, genero, plataformas de streaming, etc" tec={["HTML", "CSS", "ReactJS", "JavaScript"]} />
+
+          <Project img="./conteo.png" tipo="enlace" link="https://gonzalodaniell.github.io/Conteo-Dinero/" github="https://github.com/GonzaloDanielL/Conteo-Dinero" title="Suma y conteo (S/.)" des="Proyecto personal para sumar dinero" tec={["HTML", "CSS", "ReactJS", "JavaScript", "Tailwind CSS"]} />
 
 
-          <Project img="../suscripciones.png" tipo="imagen" github="https://github.com/GonzaloDanielL/Suscripciones" title="Administrar suscripciones" des="Proyecto personal que registra suscripciones y sus proveedores" tec={["HTML", "PHP", "Bootstrap", "JavaScript", "MySQL"]} />
+          <Project img="./suscripciones.png" tipo="imagen" github="https://github.com/GonzaloDanielL/Suscripciones" title="Administrar suscripciones" des="Proyecto personal que registra suscripciones y sus proveedores" tec={["HTML", "PHP", "Bootstrap", "JavaScript", "MySQL"]} />
 
-          <Project img="../Boletas.png" tipo="imagen" github="https://github.com/GonzaloDanielL/AdminCompras" title="Boletas o compras" des="Proyecto personal que registra compras, también muestra gráficos con los datos registrados" tec={["HTML", "PHP", "Bootstrap", "JavaScript", "jQuery", "MySQL"]} />
+          <Project img="./Boletas.png" tipo="imagen" github="https://github.com/GonzaloDanielL/AdminCompras" title="Boletas o compras" des="Proyecto personal que registra compras, también muestra gráficos con los datos registrados" tec={["HTML", "PHP", "Bootstrap", "JavaScript", "jQuery", "MySQL"]} />
 
         </div>
 
