@@ -12,21 +12,26 @@ import { Fondo } from "./components/fondo"
 
 import './App.css'
 
-window.onscroll = () => {
-  let div = document.getElementById('about').getBoundingClientRect().bottom;
-
-  if (div > 500) {
-    document.getElementById('navigation-left').style.left = '-220px';
-    document.getElementById('navigation-left').style.opacity = '0';
-
-  } else {
-    document.getElementById('navigation-left').style.left = '-170px';
-    document.getElementById('navigation-left').style.opacity = '1';
-  }
-}
-
 
 function App() {
+  window.onscroll = () => {
+    let div = document.getElementById('about').getBoundingClientRect().bottom;
+
+    if (screen.width < 600) {
+      if (div > 500) {
+        document.getElementById('navigation-left').style.left = '-220px';
+        document.getElementById('navigation-left').style.opacity = '0';
+
+      } else {
+        document.getElementById('navigation-left').style.left = '-170px';
+        document.getElementById('navigation-left').style.opacity = '1';
+      }
+    }else{
+      document.getElementById('navigation-left').style.opacity = '1';
+      document.getElementById('navigation-left').style.left = '0px';
+    }
+  }
+
   return (
     <motion.div initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
