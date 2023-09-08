@@ -73,7 +73,7 @@ function App() {
         </div>
 
         <div className='projects-container'>
-          <Project img="./portafolio.png" tipo="enlace" link="https://gonzalodaniell.github.io/Portafolio/" github="https://github.com/GonzaloDanielL/Portafolio" title="Sistema JGyA" des="Portafolio web" tec={["HTML", "CSS", "JavaScript", "ReactJS"]} />
+          <Project img="./portafolio.png" tipo="enlace" link="https://gonzalodaniell.github.io/Portafolio/" github="https://github.com/GonzaloDanielL/Portafolio" title="Portafolio" des="Portafolio web" tec={["HTML", "CSS", "JavaScript", "ReactJS"]} />
 
           <Project img="./sistemajgya.png" tipo="bloqueado" github="https://github.com/" title="Sistema JGyA" des="Proyecto freelancer para la administración de productos como el registro, venta y la compra del mismo, la aplicación también muestra gráficos con los datos registrados" tec={["HTML", "CSS", "PHP", "Bootstrap", "JavaScript", "jQuery", "MySQL"]} />
 
