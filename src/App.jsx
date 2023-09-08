@@ -47,10 +47,13 @@ function App() {
         </div>
         <div className='about-body'>
           <div className='about-body-des'>
-            <p>Desarrollador web front end junior siempre dispuesto a
+            <p>
+              Hola 👋, soy un Desarrollador web junior, siempre dispuesto a seguir aprendiendo y enfrentar nuevos desafíos.<br/><br/>
+              Acabo de culminar mis estudios técnicos en el instituto tecnológico SENATI y ahora me encuentro aprendiendo y mejorando mis habilidades en el mundo de la programación web.
+              {/* Desarrollador web front end junior siempre dispuesto a
               seguir aprendiendo y mejorar mis habilidades en la programación, preparado
               para utilizar mis conocimientos y pasión para impulsar la
-              misión de una empresa o compañía</p>
+              misión de una empresa o compañía */}</p>
             <div className='about-body-contact'>
               <a href="https://github.com/GonzaloDanielL" target="_blank"><AiFillGithub /></a>
               <a href="https://www.linkedin.com/in/gonzalo-luna-diaz/" target="_blank"><AiFillLinkedin /></a>
@@ -72,7 +75,7 @@ function App() {
         <div className='projects-container'>
           <Project img="./portafolio.png" tipo="enlace" link="https://gonzalodaniell.github.io/Portafolio/" github="https://github.com/GonzaloDanielL/Portafolio" title="Sistema JGyA" des="Portafolio web" tec={["HTML", "CSS", "JavaScript", "ReactJS"]} />
 
-          <Project img="./sistemajgya.png" tipo="bloqueado" github="https://github.com/" title="Sistema JGyA" des="Proyecto para la administración de productos como el registro, venta y la compra del mismo, la aplicación también muestra gráficos con los datos registrados" tec={["HTML", "CSS", "PHP", "Bootstrap", "JavaScript", "jQuery", "MySQL"]} />
+          <Project img="./sistemajgya.png" tipo="bloqueado" github="https://github.com/" title="Sistema JGyA" des="Proyecto freelancer para la administración de productos como el registro, venta y la compra del mismo, la aplicación también muestra gráficos con los datos registrados" tec={["HTML", "CSS", "PHP", "Bootstrap", "JavaScript", "jQuery", "MySQL"]} />
 
           <Project img="./mealscocktails.png" tipo="enlace" link="https://gonzalodaniell.github.io/MealsAndCocktails/" github="https://github.com/GonzaloDanielL/MealsAndCocktails" title="Meals and cocktails" des="Proyecto personal que lista y muestra recetas y ingredientes de comidas y cócteles" tec={["HTML", "CSS", "ReactJS", "JavaScript", "Tailwind CSS"]} />
 
