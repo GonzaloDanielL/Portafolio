@@ -2,16 +2,13 @@ import { useState } from 'react'
 import { Contact, Navigation } from './components/navigation'
 import { Project } from './components/project';
 import { Skill } from './components/skill';
-
 import { AiFillHtml5, AiOutlineArrowUp, AiFillGithub, AiFillLinkedin } from 'react-icons/AI';
 import { IoLogoCss3 } from 'react-icons/io';
 import { BiLogoJavascript, BiLogoReact, BiLogoTailwindCss } from 'react-icons/bi';
 import { SiPhp, SiMysql, SiBootstrap } from 'react-icons/si';
 import { motion } from "framer-motion";
 import { Fondo } from "./components/fondo"
-
 import './App.css'
-
 
 function App() {
   window.onscroll = () => {
@@ -26,7 +23,7 @@ function App() {
         document.getElementById('navigation-left').style.left = '-170px';
         document.getElementById('navigation-left').style.opacity = '1';
       }
-    }else{
+    } else {
       document.getElementById('navigation-left').style.opacity = '1';
       document.getElementById('navigation-left').style.left = '0px';
     }
@@ -45,7 +42,7 @@ function App() {
         <div className='about-cabecera'>
           <h1>Gonzalo Luna</h1>
           <div className='about-button'>
-            <a href='/src/assets/GonzaloCV.pdf' target='_blank'>Descargar CV</a>
+            <a href='../src/assets/GonzaloCV.pdf' target='_blank'>Descargar CV</a>
           </div>
         </div>
         <div className='about-body'>
@@ -60,12 +57,12 @@ function App() {
             </div>
           </div>
           <div className='about-body-img'>
-            <img src="/src/assets/foto.png" alt="" />
+            <img src="../src/assets/foto.png" alt="" />
           </div>
         </div>
       </header>
 
-      <hr className='separador' />
+      <hr className='separador'/>
 
       <section className='sub-container c-2' id='projects'>
         <div className='projects-title'>
@@ -73,18 +70,18 @@ function App() {
         </div>
 
         <div className='projects-container'>
-          <Project img="/src/assets/projects/sistemajgya.png" tipo="bloqueado" github="https://github.com/" title="Sistema JGyA" des="Proyecto para la administración de productos como el registro, venta y la compra del mismo, la aplicación también muestra gráficos con los datos registrados" tec={["HTML", "CSS", "PHP", "Bootstrap", "JavaScript", "jQuery", "MySQL"]} />
+          <Project img="../src/assets/projects/sistemajgya.png" tipo="bloqueado" github="https://github.com/" title="Sistema JGyA" des="Proyecto para la administración de productos como el registro, venta y la compra del mismo, la aplicación también muestra gráficos con los datos registrados" tec={["HTML", "CSS", "PHP", "Bootstrap", "JavaScript", "jQuery", "MySQL"]} />
 
-          <Project img="/src/assets/projects/mealscocktails.png" tipo="enlace" link="https://gonzalodaniell.github.io/MealsAndCocktails/" github="https://github.com/GonzaloDanielL/MealsAndCocktails" title="Meals and cocktails" des="Proyecto personal que lista y muestra recetas y ingredientes de comidas y cócteles" tec={["HTML", "CSS", "ReactJS", "JavaScript", "Tailwind CSS"]} />
+          <Project img="../src/assets/projects/mealscocktails.png" tipo="enlace" link="https://gonzalodaniell.github.io/MealsAndCocktails/" github="https://github.com/GonzaloDanielL/MealsAndCocktails" title="Meals and cocktails" des="Proyecto personal que lista y muestra recetas y ingredientes de comidas y cócteles" tec={["HTML", "CSS", "ReactJS", "JavaScript", "Tailwind CSS"]} />
 
-          <Project img="/src/assets/projects/animedetails.png" tipo="enlace" link="https://gonzalodaniell.github.io/Anime-Details/" github="https://github.com/GonzaloDanielL/Anime-Details" title="Anime details" des="Proyecto personal que lista animes y muestra su información como capítulos, genero, plataformas de streaming, etc" tec={["HTML", "CSS", "ReactJS", "JavaScript"]} />
+          <Project img="../src/assets/projects/animedetails.png" tipo="enlace" link="https://gonzalodaniell.github.io/Anime-Details/" github="https://github.com/GonzaloDanielL/Anime-Details" title="Anime details" des="Proyecto personal que lista animes y muestra su información como capítulos, genero, plataformas de streaming, etc" tec={["HTML", "CSS", "ReactJS", "JavaScript"]} />
 
-          <Project img="/src/assets/projects/conteo.png" tipo="enlace" link="https://gonzalodaniell.github.io/Conteo-Dinero/" github="https://github.com/GonzaloDanielL/Conteo-Dinero" title="Suma y conteo (S/.)" des="Proyecto personal para sumar dinero" tec={["HTML", "CSS", "ReactJS", "JavaScript", "Tailwind CSS"]} />
+          <Project img="../src/assets/projects/conteo.png" tipo="enlace" link="https://gonzalodaniell.github.io/Conteo-Dinero/" github="https://github.com/GonzaloDanielL/Conteo-Dinero" title="Suma y conteo (S/.)" des="Proyecto personal para sumar dinero" tec={["HTML", "CSS", "ReactJS", "JavaScript", "Tailwind CSS"]} />
 
 
-          <Project img="/src/assets/projects/suscripciones.png" tipo="imagen" github="https://github.com/GonzaloDanielL/Suscripciones" title="Administrar suscripciones" des="Proyecto personal que registra suscripciones y sus proveedores" tec={["HTML", "PHP", "Bootstrap", "JavaScript", "MySQL"]} />
+          <Project img="../src/assets/projects/suscripciones.png" tipo="imagen" github="https://github.com/GonzaloDanielL/Suscripciones" title="Administrar suscripciones" des="Proyecto personal que registra suscripciones y sus proveedores" tec={["HTML", "PHP", "Bootstrap", "JavaScript", "MySQL"]} />
 
-          <Project img="/src/assets/projects/Boletas.png" tipo="imagen" github="https://github.com/GonzaloDanielL/AdminCompras" title="Boletas o compras" des="Proyecto personal que registra compras, también muestra gráficos con los datos registrados" tec={["HTML", "PHP", "Bootstrap", "JavaScript", "jQuery", "MySQL"]} />
+          <Project img="../src/assets/projects/Boletas.png" tipo="imagen" github="https://github.com/GonzaloDanielL/AdminCompras" title="Boletas o compras" des="Proyecto personal que registra compras, también muestra gráficos con los datos registrados" tec={["HTML", "PHP", "Bootstrap", "JavaScript", "jQuery", "MySQL"]} />
 
         </div>
 
