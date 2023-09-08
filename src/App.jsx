@@ -3,7 +3,7 @@ import { Contact, Navigation } from './components/navigation'
 import { Project } from './components/project';
 import { Skill } from './components/skill';
 
-import { AiFillHtml5, AiOutlineArrowUp } from 'react-icons/AI';
+import { AiFillHtml5, AiOutlineArrowUp, AiFillGithub, AiFillLinkedin } from 'react-icons/AI';
 import { IoLogoCss3 } from 'react-icons/io';
 import { BiLogoJavascript, BiLogoReact, BiLogoTailwindCss } from 'react-icons/bi';
 import { SiPhp, SiMysql, SiBootstrap } from 'react-icons/si';
@@ -12,16 +12,30 @@ import { Fondo } from "./components/fondo"
 
 import './App.css'
 
+window.onscroll = () => {
+  let div = document.getElementById('about').getBoundingClientRect().bottom;
+
+  if (div > 500) {
+    document.getElementById('navigation-left').style.left = '-220px';
+    document.getElementById('navigation-left').style.opacity = '0';
+
+  } else {
+    document.getElementById('navigation-left').style.left = '-170px';
+    document.getElementById('navigation-left').style.opacity = '1';
+  }
+}
+
+
 function App() {
   return (
-    <motion.div initial={{ opacity: 0 }} 
+    <motion.div initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2.5 }}
       className='main-container'>
       <Navigation />
       <Contact />
-      <Fondo/>
-      
+      <Fondo />
+
       <header className='sub-container c-1' id='about'>
         <div className='about-cabecera'>
           <h1>Gonzalo Luna</h1>
@@ -35,6 +49,10 @@ function App() {
               seguir aprendiendo y mejorar mis habilidades en la programación, preparado
               para utilizar mis conocimientos y pasión para impulsar la
               misión de una empresa o compañía</p>
+            <div className='about-body-contact'>
+              <a href="https://github.com/GonzaloDanielL" target="_blank"><AiFillGithub /></a>
+              <a href="https://www.linkedin.com/in/gonzalo-luna-diaz/" target="_blank"><AiFillLinkedin /></a>
+            </div>
           </div>
           <div className='about-body-img'>
             <img src="/src/assets/foto.png" alt="" />
@@ -42,7 +60,7 @@ function App() {
         </div>
       </header>
 
-      <hr className='separador'/>
+      <hr className='separador' />
 
       <section className='sub-container c-2' id='projects'>
         <div className='projects-title'>
@@ -94,7 +112,7 @@ function App() {
 
       </section>
 
-      <hr className='separador'/>
+      <hr className='separador' />
 
       <section className='sub-container c-4'>
         <footer className='footer-container'>

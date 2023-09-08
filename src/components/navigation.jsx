@@ -1,5 +1,11 @@
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/AI';
+
+import {BiSolidRightArrow} from 'react-icons/bi';
 import { motion } from 'framer-motion'
+
+function mostrar_nav_arrow(){
+    document.getElementById('navigation-left').style.left = "0px";
+}
 
 export function Contact() {
     return (
@@ -20,7 +26,7 @@ export function Contact() {
 
 export function Navigation() {
     return (
-        <div className="navigation-container">
+        <div className="navigation-container" id="navigation-left">
             <motion.nav 
             initial={{x: -100, scale: 0.5 }}
             animate={{x: 0, scale:1}}
@@ -34,6 +40,9 @@ export function Navigation() {
                 </ul>
 
             </motion.nav>
+            <button className='nv-arrow' onClick={() => {mostrar_nav_arrow()}}>
+                <BiSolidRightArrow/>
+            </button>
         </div>
     )
 }
