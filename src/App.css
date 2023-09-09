@@ -585,54 +585,50 @@ body::-webkit-scrollbar-thumb {
         & .contacto-form {
             display: flex;
             flex-direction: column;
-            gap: 18px;
+            gap: 10px;
 
-            & .form-item {
-                display: flex;
-                flex-direction: column;
-                gap: 6px;
+            & label {
+                font-size: 1.3rem;
+                color: var(--var-color-secondary);
+            }
 
-                & label {
-                    font-size: 1.3rem;
-                    color: var(--var-color-secondary);
-                }
+            & input {
+                
+                color: var(--var-color-secondary);
+                padding: 10px;
+                border-radius: 5px;
+                font-size: 1.2rem;
+                outline: none;
+                background-color: #6a6a6a7e;
+                border: 1px solid var(--var-color-secondary);
+                transition: all 0.2s;
+            }
 
-                & input {
-                    color: var(--var-color-secondary);
-                    padding: 10px;
-                    border-radius: 5px;
-                    font-size: 1.2rem;
-                    outline: none;
-                    background-color: #6a6a6a7e;
-                    border: 1px solid var(--var-color-secondary);
-                    transition: all 0.2s;
-                }
+            & input:focus,
+            textarea:focus {
+                box-shadow: 0 0 0 5px #8585857e;
+            }
 
-                & input:focus, textarea:focus {
-                    box-shadow:  0 0 0 5px #8585857e;
-                }
+            & textarea {
+                color: var(--var-color-secondary);
+                padding: 10px;
+                border-radius: 5px;
+                font-size: 1.2rem;
+                outline: none;
+                background-color: #6a6a6a7e;
+                border: 1px solid var(--var-color-secondary);
+                transition: all 0.2s;
+            }
 
-                & textarea {
-                    color: var(--var-color-secondary);
-                    padding: 10px;
-                    border-radius: 5px;
-                    font-size: 1.2rem;
-                    outline: none;
-                    background-color: #6a6a6a7e;
-                    border: 1px solid var(--var-color-secondary);
-                    transition: all 0.2s;
-                }
+            & .contacto-input-submit {
+                margin-top: 15px;
+                background-color: var(--var-color-primary);
+                color: var(--var-color-secondary);
+                border: none;
+            }
 
-                & .contacto-input-submit {
-                    margin-top: 15px;
-                    background-color: var(--var-color-primary);
-                    color: var(--var-color-secondary);
-                    border: none;
-                }
-
-                & .contacto-input-submit:hover {
-                    box-shadow:  0 0 0 5px #8585857e;
-                }
+            & .contacto-input-submit:hover {
+                box-shadow: 0 0 0 5px #8585857e;
             }
         }
     }

@@ -124,21 +124,21 @@ function App() {
 
         <div className='contacto-body'>
           <form action="https://formsubmit.co/gonzaloluna738@gmail.com" method="post" className='contacto-form'>
-            <div className='form-item'>
+      {/*       <div className='form-item'> */}
               <label for="name">Nombre: </label>
               <input id="name" name="name" type="text" />
-            </div>
-            <div className='form-item'>
+ {/*            </div>
+            <div className='form-item'> */}
               <label for="email">Email: </label>
               <input id="email" name="email" type="text" />
-            </div>
-            <div className='form-item'>
+{/*             </div>
+            <div className='form-item'> */}
               <label for="description">Descripción: </label>
               <textarea id="description" name="description" type="text"></textarea>
-            </div>
-            <div className='form-item'>
+{/*             </div>
+            <div className='form-item'> */}
               <input name="Submit" className='contacto-input-submit' type="submit" value="Enviar" />
-            </div>
+{/*             </div> */}
           </form>
         </div>
 
