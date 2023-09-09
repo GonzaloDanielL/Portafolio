@@ -39,17 +39,14 @@ function App() {
       <Fondo />
 
       <header className='sub-container c-1' id='about'>
-        <div className='about-cabecera'>
-          <h1>Gonzalo Luna</h1>
-          <div className='about-button'>
-            <a href='./GonzaloCV.pdf' target='_blank'>Descargar CV</a>
-          </div>
-        </div>
         <div className='about-body'>
           <div className='about-body-des'>
+            <h1>Gonzalo Luna</h1>
             <p>
-              Hola 👋, soy un Desarrollador web junior, siempre dispuesto a seguir aprendiendo y enfrentar nuevos desafíos.<br/><br/>
-              Acabo de culminar mis estudios técnicos en el instituto tecnológico SENATI y ahora me encuentro aprendiendo y mejorando mis habilidades en el mundo de la programación web.
+              Hola 👋, soy un Desarrollador web junior, siempre dispuesto a seguir aprendiendo y enfrentar nuevos desafíos.<br /><br />
+
+              {/*               Acabo de culminar mis estudios técnicos en el instituto tecnológico SENATI y ahora me encuentro aprendiendo y mejorando mis habilidades en el mundo de la programación web. */}
+
               {/* Desarrollador web front end junior siempre dispuesto a
               seguir aprendiendo y mejorar mis habilidades en la programación, preparado
               para utilizar mis conocimientos y pasión para impulsar la
@@ -119,9 +116,37 @@ function App() {
 
       </section>
 
+      <section className='sub-container c-4' id="contacto">
+
+        <div className='contacto-title'>
+          <h1>Contácteme</h1>
+        </div>
+
+        <div className='contacto-body'>
+          <form action="https://formsubmit.co/gonzaloluna738@gmail.com" method="post" className='contacto-form'>
+            <div className='form-item'>
+              <label for="nombre">Nombre: </label>
+              <input id="nombre" type="text" />
+            </div>
+            <div className='form-item'>
+              <label for="email">Email: </label>
+              <input id="email" type="text" />
+            </div>
+            <div className='form-item'>
+              <label for="descripcion">Descripción: </label>
+              <textarea id="descripcion" type="text"></textarea>
+            </div>
+            <div className='form-item'>
+              <input name="Submit" className='contacto-input-submit' type="submit" value="Enviar" />
+            </div>
+          </form>
+        </div>
+
+      </section>
+
       <hr className='separador' />
 
-      <section className='sub-container c-4'>
+      <section className='sub-container c-5'>
         <footer className='footer-container'>
           <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="#about">{<AiOutlineArrowUp />}Regresar arriba{<AiOutlineArrowUp />}</motion.a>
         </footer>

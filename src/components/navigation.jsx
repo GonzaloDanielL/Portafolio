@@ -37,6 +37,8 @@ export function Navigation() {
                     <motion.li whileHover={{x: 8, scale:1.1}}><a href="#about">Acerca de</a></motion.li>
                     <motion.li whileHover={{x: 8, scale:1.1}}><a href="#projects">Proyectos</a></motion.li>
                     <motion.li whileHover={{x: 8, scale:1.1}}><a href="#skills">Habilidades</a></motion.li>
+
+                    <motion.li whileHover={{x: 8, scale:1.1}}><a href="#contacto">Contacto</a></motion.li>
                 </ul>
 
             </motion.nav>
