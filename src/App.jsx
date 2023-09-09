@@ -125,16 +125,16 @@ function App() {
         <div className='contacto-body'>
           <form action="https://formsubmit.co/gonzaloluna738@gmail.com" method="post" className='contacto-form'>
             <div className='form-item'>
-              <label for="nombre">Nombre: </label>
-              <input id="nombre" type="text" />
+              <label for="name">Nombre: </label>
+              <input id="name" name="name" type="text" />
             </div>
             <div className='form-item'>
               <label for="email">Email: </label>
-              <input id="email" type="text" />
+              <input id="email" name="email" type="text" />
             </div>
             <div className='form-item'>
-              <label for="descripcion">Descripción: </label>
-              <textarea id="descripcion" type="text"></textarea>
+              <label for="description">Descripción: </label>
+              <textarea id="description" name="description" type="text"></textarea>
             </div>
             <div className='form-item'>
               <input name="Submit" className='contacto-input-submit' type="submit" value="Enviar" />
