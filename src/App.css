@@ -593,7 +593,7 @@ body::-webkit-scrollbar-thumb {
             }
 
             & input {
-                
+
                 color: var(--var-color-secondary);
                 padding: 10px;
                 border-radius: 5px;
@@ -998,44 +998,40 @@ body::-webkit-scrollbar-thumb {
                 flex-direction: column;
                 gap: 18px;
 
-                & .form-item {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 6px;
 
-                    & label {
-                        font-size: 1.3rem;
-                        color: var(--var-color-secondary);
-                    }
+                & label {
+                    font-size: 1.3rem;
+                    color: var(--var-color-secondary);
+                }
 
-                    & input {
-                        color: var(--var-color-secondary);
-                        padding: 10px;
-                        border-radius: 5px;
-                        font-size: 1.2rem;
-                        outline: none;
-                        background-color: #6a6a6a7e;
-                        border: 1px solid var(--var-color-secondary);
-                    }
+                & input {
+                    color: var(--var-color-secondary);
+                    padding: 10px;
+                    border-radius: 5px;
+                    font-size: 1.2rem;
+                    outline: none;
+                    background-color: #6a6a6a7e;
+                    border: 1px solid var(--var-color-secondary);
+                }
 
-                    & textarea {
-                        color: var(--var-color-secondary);
-                        padding: 10px;
-                        border-radius: 5px;
-                        font-size: 1.2rem;
-                        outline: none;
-                        background-color: #6a6a6a7e;
-                        border: 1px solid var(--var-color-secondary);
-                    }
+                & textarea {
+                    color: var(--var-color-secondary);
+                    padding: 10px;
+                    border-radius: 5px;
+                    font-size: 1.2rem;
+                    outline: none;
+                    background-color: #6a6a6a7e;
+                    border: 1px solid var(--var-color-secondary);
+                }
 
-                    & .contacto-input-submit {
-                        margin-top: 20px;
-                        background-color: var(--var-color-primary);
-                        color: var(--var-color-secondary);
-                        border: 2px solid var(--var-color-secondary);
-                    }
+                & .contacto-input-submit {
+                    margin-top: 20px;
+                    background-color: var(--var-color-primary);
+                    color: var(--var-color-secondary);
+                    border: 2px solid var(--var-color-secondary);
                 }
             }
+
         }
 
     }
