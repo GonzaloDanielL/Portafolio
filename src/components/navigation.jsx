@@ -4,7 +4,7 @@ import {BiSolidRightArrow} from 'react-icons/bi';
 import { motion } from 'framer-motion'
 
 function mostrar_nav_arrow(){
-    document.getElementById('navigation-left').style.left = "0px";
+    document.getElementById('navigation-left-arrow').style.left = "0px";
 }
 
 export function Contact() {
@@ -26,7 +26,29 @@ export function Contact() {
 
 export function Navigation() {
     return (
-        <div className="navigation-container" id="navigation-left">
+        <div className="navigation-container">
+            <motion.nav 
+            initial={{x: -100, scale: 0.5 }}
+            animate={{x: 0, scale:1}}
+            transition={{duration: 1}}
+            className="navigation-nav">
+
+                <ul className="nav-list-container">
+                    <motion.li whileHover={{x: 8, scale:1.1}}><a href="#about">Acerca de</a></motion.li>
+                    <motion.li whileHover={{x: 8, scale:1.1}}><a href="#projects">Proyectos</a></motion.li>
+                    <motion.li whileHover={{x: 8, scale:1.1}}><a href="#skills">Habilidades</a></motion.li>
+
+                    <motion.li whileHover={{x: 8, scale:1.1}}><a href="#contacto">Contacto</a></motion.li>
+                </ul>
+
+            </motion.nav>
+        </div>
+    )
+}
+
+export function Navigation_arrow() {
+    return (
+        <div className="navigation-arrow-container" id="navigation-left-arrow">
             <motion.nav 
             initial={{x: -100, scale: 0.5 }}
             animate={{x: 0, scale:1}}

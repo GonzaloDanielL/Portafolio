@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Contact, Navigation } from './components/navigation'
+import { Contact, Navigation, Navigation_arrow } from './components/navigation'
 import { Project } from './components/project';
 import { Skill } from './components/skill';
 import { AiFillHtml5, AiOutlineArrowUp, AiFillGithub, AiFillLinkedin } from 'react-icons/AI';
@@ -14,18 +14,13 @@ function App() {
   window.onscroll = () => {
     let div = document.getElementById('about').getBoundingClientRect().bottom;
 
-    if (screen.width < 600) {
-      if (div > 500) {
-        document.getElementById('navigation-left').style.left = '-220px';
-        document.getElementById('navigation-left').style.opacity = '0';
+    if (div > 500) {
+      document.getElementById('navigation-left-arrow').style.left = '-220px';
+      document.getElementById('navigation-left-arrow').style.opacity = '0';
 
-      } else {
-        document.getElementById('navigation-left').style.left = '-170px';
-        document.getElementById('navigation-left').style.opacity = '1';
-      }
     } else {
-      document.getElementById('navigation-left').style.opacity = '1';
-      document.getElementById('navigation-left').style.left = '0px';
+      document.getElementById('navigation-left-arrow').style.left = '-170px';
+      document.getElementById('navigation-left-arrow').style.opacity = '1';
     }
   }
 
@@ -36,6 +31,7 @@ function App() {
       className='main-container'>
       <Navigation />
       <Contact />
+      <Navigation_arrow />
       <Fondo />
 
       <header className='sub-container c-1' id='about'>
@@ -124,21 +120,21 @@ function App() {
 
         <div className='contacto-body'>
           <form action="https://formsubmit.co/gonzaloluna738@gmail.com" method="post" className='contacto-form'>
-      {/*       <div className='form-item'> */}
-              <label for="name">Nombre: </label>
-              <input id="name" name="name" type="text" />
- {/*            </div>
+            {/*       <div className='form-item'> */}
+            <label for="name">Nombre: </label>
+            <input id="name" name="name" type="text" />
+            {/*            </div>
             <div className='form-item'> */}
-              <label for="email">Email: </label>
-              <input id="email" name="email" type="text" />
-{/*             </div>
+            <label for="email">Email: </label>
+            <input id="email" name="email" type="text" />
+            {/*             </div>
             <div className='form-item'> */}
-              <label for="description">Descripción: </label>
-              <textarea id="description" name="description" type="text"></textarea>
-{/*             </div>
+            <label for="description">Descripción: </label>
+            <textarea id="description" name="description" type="text"></textarea>
+            {/*             </div>
             <div className='form-item'> */}
-              <input name="Submit" className='contacto-input-submit' type="submit" value="Enviar" />
-{/*             </div> */}
+            <input name="Submit" className='contacto-input-submit' type="submit" value="Enviar" />
+            {/*             </div> */}
           </form>
         </div>
 
