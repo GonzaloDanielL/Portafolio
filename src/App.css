@@ -639,7 +639,6 @@ body::-webkit-scrollbar-thumb {
     }
 
     & .contacto-body {
-        min-width: 330px;
         background-color: var(--var-fondo-card);
         padding: 20px;
         border-radius: 10px;
