@@ -378,7 +378,7 @@ body::-webkit-scrollbar-thumb {
 /*====> about*/
 .c-1 {
     margin-bottom: 80px;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
 
@@ -387,19 +387,18 @@ body::-webkit-scrollbar-thumb {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
         gap: 40px;
         padding-left: 100px;
         padding-right: 100px;
-        padding-top: 100px;
 
         & .about-body-des {
             flex: 50%;
             font-size: 1.5rem;
-            height: 500px;
+            height: fit-content;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: 45px;
 
             & h1 {
                 font-size: 5rem;
@@ -407,12 +406,29 @@ body::-webkit-scrollbar-thumb {
             }
 
             & p {
+                margin-top: 30px;
                 height: fit-content;
 
             }
 
+            & .boton-cv{
+                font-size: 1.1rem;
+                text-decoration: none;
+                background-color: var(--var-color-primary);
+                width: fit-content;
+                color: var(--var-color-secondary);
+                padding: 8px;
+                border-radius: 10px;
+                transition: transform 0.2s;
+            }
+
+            & .boton-cv:hover{
+                transform: scale(1.1);
+            }
+
             & .about-body-contact {
                 display: none;
+                margin-top: 10px;
             }
         }
 

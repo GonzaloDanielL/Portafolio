@@ -40,6 +40,8 @@ function App() {
             <h1>Gonzalo Luna</h1>
             <p>
               Hola 👋, soy un Desarrollador web junior, siempre dispuesto a seguir aprendiendo y enfrentar nuevos desafíos.<br /><br />
+              Egresado y titulado de la carrera técnica de ingeniero de software, Actualmente estoy mejorando de manera autodidacta mis habilidades en el mundo del desarrollo web.
+              <br /><br />
 
               {/*               Acabo de culminar mis estudios técnicos en el instituto tecnológico SENATI y ahora me encuentro aprendiendo y mejorando mis habilidades en el mundo de la programación web. */}
 
@@ -47,6 +49,7 @@ function App() {
               seguir aprendiendo y mejorar mis habilidades en la programación, preparado
               para utilizar mis conocimientos y pasión para impulsar la
               misión de una empresa o compañía */}</p>
+              <a className='boton-cv' href="./GonzaloCV.pdf" target='_blank'>Descargar CV</a>
             <div className='about-body-contact'>
               <a href="https://github.com/GonzaloDanielL" target="_blank"><AiFillGithub /></a>
               <a href="https://www.linkedin.com/in/gonzalo-luna-diaz/" target="_blank"><AiFillLinkedin /></a>
