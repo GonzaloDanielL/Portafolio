@@ -52,8 +52,8 @@ function App() {
               Egresado y titulado de la carrera técnica de ingeniero de software, Actualmente estoy mejorando de manera autodidacta mis habilidades en el mundo del desarrollo web.
               <br /><br /></p>
             <div className='about-body-contact'>
-              <a href="https://github.com/GonzaloDanielL" target="_blank"><AiFillGithub /></a>
-              <a href="https://www.linkedin.com/in/gonzalo-luna-diaz/" target="_blank"><AiFillLinkedin /></a>
+              <motion.a whileHover={{scale: 1.1}} href="https://github.com/GonzaloDanielL" target="_blank"><AiFillGithub /></motion.a>
+              <motion.a whileHover={{scale: 1.1}} href="https://www.linkedin.com/in/gonzalo-luna-diaz/" target="_blank"><AiFillLinkedin /></motion.a>
             </div>
             <a className='boton-cv' href="./GonzaloCV.pdf" target='_blank'>Descargar CV</a>
           </div>

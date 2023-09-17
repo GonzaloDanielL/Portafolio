@@ -10,16 +10,12 @@ function mostrar_nav_arrow() {
 export function Contact() {
     return (
         <div className="navigation-container-right">
-            <motion.nav
-                initial={{ x: 100, scale: 0.5 }}
-                animate={{ x: 0, scale: 1 }}
-                transition={{ duration: 1 }}
-                className="navigation-nav">
+            <nav className="navigation-nav">
                 <ul className="nav-list-container">
-                    <motion.li whileHover={{ x: -8, scale: 1.1 }}><a href="https://github.com/GonzaloDanielL" target="_blank"><AiFillGithub /></a></motion.li>
-                    <motion.li whileHover={{ x: -8, scale: 1.1 }}><a href="https://www.linkedin.com/in/gonzalo-luna-diaz/" target="_blank"><AiFillLinkedin /></a></motion.li>
+                    <motion.li whileHover={{scale: 1.1 }}><a href="https://github.com/GonzaloDanielL" target="_blank"><AiFillGithub /></a></motion.li>
+                    <motion.li whileHover={{scale: 1.1 }}><a href="https://www.linkedin.com/in/gonzalo-luna-diaz/" target="_blank"><AiFillLinkedin /></a></motion.li>
                 </ul>
-            </motion.nav>
+            </nav>
         </div>
     )
 }
@@ -27,11 +23,7 @@ export function Contact() {
 export function Navigation() {
     return (
         <div className="navigation-container" id="navigation-container">
-            <motion.nav
-                initial={{ x: -100, scale: 0.5 }}
-                animate={{ x: 0, scale: 1 }}
-                transition={{ duration: 1 }}
-                className="navigation-nav">
+            <nav className="navigation-nav">
                 <h1 className='nav-title'>Gonzalo Luna</h1>
                 <ul className="nav-list-container">
                     <motion.li whileHover={{ scale: 1.1 }}><a href="#about">Acerca de</a></motion.li>
@@ -39,7 +31,7 @@ export function Navigation() {
                     <motion.li whileHover={{ scale: 1.1 }}><a href="#skills">Habilidades</a></motion.li>
                     <motion.li whileHover={{ scale: 1.1 }}><a href="#contacto">Contacto</a></motion.li>
                 </ul>
-            </motion.nav>
+            </nav>
         </div>
     )
 }
