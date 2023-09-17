@@ -25,11 +25,11 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0);
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: var(--var-color-secondary);
+    background-color: var(--var-color-primary);
     border-radius: 20px;
 }
 
@@ -244,6 +244,7 @@ body::-webkit-scrollbar-thumb {
 
 /*====> Navigation*/
 .navigation-container-right {
+    display: none;
     right: 0;
     width: 10%;
     position: fixed;
@@ -284,23 +285,34 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navigation-container {
+    z-index: 10;
     left: 0;
-    width: 10%;
+    top: 0;
     position: fixed;
-    padding-top: 10%;
-    padding-left: 17px;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.497), rgba(255, 255, 255, 0));
-    height: 100vh;
+    background-color: #433d3d98;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    width: 100%;
 
     & .navigation-nav {
         padding: 15px;
-        border-left: 2px solid var(--var-color-primary);
+        display: flex;
+        flex-direction: row;
+        
+
+        & .nav-title{
+            font-size: 3rem;
+            flex: auto;
+        }
 
         & .nav-list-container {
+            flex: auto;
             list-style-type: none;
             font-size: 1.4rem;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            justify-content: right;
+            align-items: center;
             gap: 30px;
             width: fit-content;
 
@@ -377,6 +389,7 @@ body::-webkit-scrollbar-thumb {
 
 /*====> about*/
 .c-1 {
+    padding-top: 90px;
     margin-bottom: 80px;
     height: 90vh;
     display: flex;
@@ -751,6 +764,7 @@ body::-webkit-scrollbar-thumb {
 
     /*====> about*/
     .c-1 {
+        padding-top: 0px;
         margin-bottom: 100px;
         height: fit-content;
         display: flex;
@@ -1081,7 +1095,6 @@ body::-webkit-scrollbar-thumb {
             }
         }
     }
-
 
     .fondo-container {
         position: fixed;
