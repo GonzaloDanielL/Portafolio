@@ -289,18 +289,21 @@ body::-webkit-scrollbar-thumb {
     left: 0;
     top: 0;
     position: fixed;
-    background-color: #433d3d98;
+    background-color: #433d3d00;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: all 0.4s;
 
     & .navigation-nav {
         padding: 15px;
         display: flex;
         flex-direction: row;
-        
 
-        & .nav-title{
+
+        & .nav-title {
             font-size: 3rem;
             flex: auto;
         }
@@ -414,6 +417,7 @@ body::-webkit-scrollbar-thumb {
             justify-content: center;
 
             & h1 {
+                display: none;
                 font-size: 5rem;
                 height: fit-content;
             }
@@ -424,7 +428,7 @@ body::-webkit-scrollbar-thumb {
 
             }
 
-            & .boton-cv{
+            & .boton-cv {
                 font-size: 1.1rem;
                 text-decoration: none;
                 background-color: var(--var-color-primary);
@@ -435,13 +439,22 @@ body::-webkit-scrollbar-thumb {
                 transition: transform 0.2s;
             }
 
-            & .boton-cv:hover{
+            & .boton-cv:hover {
                 transform: scale(1.1);
             }
 
             & .about-body-contact {
-                display: none;
-                margin-top: 10px;
+                display: flex;
+                gap: 20px;
+
+
+                & a {
+                    border-bottom: 2px solid transparent;
+                    padding-bottom: 6px;
+                    font-size: 2.8rem;
+                    transition: border-bottom 0.2s ease-in;
+                    color: var(--var-color-primary);
+                }
             }
         }
 
@@ -458,6 +471,7 @@ body::-webkit-scrollbar-thumb {
         }
     }
 }
+
 
 /*====> proyectos */
 .c-2 {
@@ -744,7 +758,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-@media (width <= 1024px) {
+@media (width <=1024px) {
     .main-container {
         padding-left: 10px;
         padding-right: 10px;
@@ -789,6 +803,7 @@ body::-webkit-scrollbar-thumb {
                 align-items: start;
 
                 & h1 {
+                    display: block;
                     margin-bottom: 10px;
                     font-size: 4.5rem;
                     height: fit-content;
@@ -1024,6 +1039,7 @@ body::-webkit-scrollbar-thumb {
         }
 
         & .contacto-body {
+            flex: auto;
             background-color: var(--var-fondo-card);
             padding: 20px;
             border-radius: 10px;

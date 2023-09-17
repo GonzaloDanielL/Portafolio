@@ -26,7 +26,7 @@ export function Contact() {
 
 export function Navigation() {
     return (
-        <div className="navigation-container">
+        <div className="navigation-container" id="navigation-container">
             <motion.nav
                 initial={{ x: -100, scale: 0.5 }}
                 animate={{ x: 0, scale: 1 }}

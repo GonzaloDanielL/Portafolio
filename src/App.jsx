@@ -13,6 +13,7 @@ import './App.css'
 function App() {
   window.onscroll = () => {
     let div = document.getElementById('about').getBoundingClientRect().bottom;
+    let divtop = document.getElementById('about').getBoundingClientRect().top;
 
     if (div > 500) {
       document.getElementById('navigation-left-arrow').style.left = '-220px';
@@ -21,6 +22,14 @@ function App() {
     } else {
       document.getElementById('navigation-left-arrow').style.left = '-170px';
       document.getElementById('navigation-left-arrow').style.opacity = '1';
+    }
+
+    if (divtop < -80) {
+      document.getElementById('navigation-container').style.backgroundColor = '#433d3d98';
+
+    } else {
+      document.getElementById('navigation-container').style.backgroundColor = '#433d3d00';
+
     }
   }
 
@@ -41,19 +50,12 @@ function App() {
             <p>
               Hola 👋, soy un Desarrollador web junior, siempre dispuesto a seguir aprendiendo y enfrentar nuevos desafíos.<br /><br />
               Egresado y titulado de la carrera técnica de ingeniero de software, Actualmente estoy mejorando de manera autodidacta mis habilidades en el mundo del desarrollo web.
-              <br /><br />
-
-              {/*               Acabo de culminar mis estudios técnicos en el instituto tecnológico SENATI y ahora me encuentro aprendiendo y mejorando mis habilidades en el mundo de la programación web. */}
-
-              {/* Desarrollador web front end junior siempre dispuesto a
-              seguir aprendiendo y mejorar mis habilidades en la programación, preparado
-              para utilizar mis conocimientos y pasión para impulsar la
-              misión de una empresa o compañía */}</p>
-              <a className='boton-cv' href="./GonzaloCV.pdf" target='_blank'>Descargar CV</a>
+              <br /><br /></p>
             <div className='about-body-contact'>
               <a href="https://github.com/GonzaloDanielL" target="_blank"><AiFillGithub /></a>
               <a href="https://www.linkedin.com/in/gonzalo-luna-diaz/" target="_blank"><AiFillLinkedin /></a>
             </div>
+            <a className='boton-cv' href="./GonzaloCV.pdf" target='_blank'>Descargar CV</a>
           </div>
           <div className='about-body-img'>
             <img src="./foto.png" alt="" />
