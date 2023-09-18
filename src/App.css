@@ -33,6 +33,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;
 }
 
+
 .main-container {
     width: 100%;
     padding-left: 15%;
@@ -304,7 +305,7 @@ body::-webkit-scrollbar-thumb {
 
 
         & .nav-title {
-            font-size: 3rem;
+            font-size: 3.2rem;
             flex: auto;
         }
 
@@ -360,7 +361,7 @@ body::-webkit-scrollbar-thumb {
 
         & .nav-list-container {
             list-style-type: none;
-            font-size: 1.6rem;
+            font-size: 1.2rem;
             display: flex;
             flex-direction: column;
             gap: 30px;
@@ -385,7 +386,7 @@ body::-webkit-scrollbar-thumb {
     & .nv-arrow {
         background-color: transparent;
         border: none;
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: var(--var-color-primary);
     }
 }
@@ -397,6 +398,7 @@ body::-webkit-scrollbar-thumb {
     height: 90vh;
     display: flex;
     flex-direction: column;
+    width: 100%;
 
     & .about-body {
         flex: 100%;
@@ -418,7 +420,7 @@ body::-webkit-scrollbar-thumb {
 
             & h1 {
                 display: none;
-                font-size: 5rem;
+                font-size: 3rem;
                 height: fit-content;
             }
 
@@ -479,12 +481,13 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    width: 100%;
 
     & .projects-title {
         width: 100%;
 
         & h1 {
-            font-size: 4rem;
+            font-size: 3rem;
             height: fit-content;
             text-align: center;
         }
@@ -607,12 +610,13 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    width: 100%;
 
     & .skill-title {
         width: 100%;
 
         & h1 {
-            font-size: 4rem;
+            font-size: 3rem;
             height: fit-content;
             text-align: center;
         }
@@ -651,20 +655,24 @@ body::-webkit-scrollbar-thumb {
     padding-top: 90px;
     margin-bottom: 100px;
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 40px;
+    width: 100%;
 
     & .contacto-title {
         width: 100%;
 
         & h1 {
-            font-size: 4rem;
+            font-size: 3rem;
             height: fit-content;
             text-align: center;
         }
     }
 
     & .contacto-body {
+        flex: auto;
+        min-width: 400px;
         background-color: var(--var-fondo-card);
         padding: 20px;
         border-radius: 10px;
@@ -676,6 +684,7 @@ body::-webkit-scrollbar-thumb {
             gap: 10px;
 
             & label {
+                width: fit-content;
                 font-size: 1.3rem;
                 color: var(--var-color-secondary);
             }
@@ -757,7 +766,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-@media (width <=1024px) {
+@media (width <= 1024px) {
     .main-container {
         padding-left: 10px;
         padding-right: 10px;
@@ -804,11 +813,12 @@ body::-webkit-scrollbar-thumb {
                 & h1 {
                     display: block;
                     margin-bottom: 10px;
-                    font-size: 4.5rem;
+                    font-size: 3rem;
                     height: fit-content;
                 }
 
                 & p {
+                    font-size: 1.2rem;
                     height: fit-content;
                 }
 
@@ -857,7 +867,7 @@ body::-webkit-scrollbar-thumb {
             width: 100%;
 
             & h1 {
-                font-size: 3rem;
+                font-size: 2.8rem;
                 height: fit-content;
                 text-align: center;
             }
@@ -936,12 +946,12 @@ body::-webkit-scrollbar-thumb {
                         & .projects-card-body-des {
 
                             & h2 {
-                                font-size: 2.2rem;
+                                font-size: 2rem;
                             }
 
                             & p {
                                 margin-top: 10px;
-                                font-size: 1.2rem;
+                                font-size: 1.1rem;
                             }
                         }
 
@@ -985,7 +995,7 @@ body::-webkit-scrollbar-thumb {
             width: 100%;
 
             & h1 {
-                font-size: 3rem;
+                font-size: 2.8rem;
                 height: fit-content;
                 text-align: center;
             }
@@ -1022,7 +1032,7 @@ body::-webkit-scrollbar-thumb {
     /*====> contacto*/
     .c-4 {
         padding-top: 20px;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
         display: flex;
         flex-direction: column;
         gap: 40px;
@@ -1031,7 +1041,7 @@ body::-webkit-scrollbar-thumb {
             width: 100%;
 
             & h1 {
-                font-size: 3rem;
+                font-size: 2.8rem;
                 height: fit-content;
                 text-align: center;
             }
@@ -1039,10 +1049,12 @@ body::-webkit-scrollbar-thumb {
 
         & .contacto-body {
             flex: auto;
+            min-width: 300px;
             background-color: var(--var-fondo-card);
             padding: 20px;
             border-radius: 10px;
             border: 2px solid var(--var-color-secondary);
+
 
             & .contacto-form {
                 display: flex;
@@ -1051,7 +1063,7 @@ body::-webkit-scrollbar-thumb {
 
 
                 & label {
-                    font-size: 1.3rem;
+                    font-size: 1.2rem;
                     color: var(--var-color-secondary);
                 }
 
@@ -1059,7 +1071,7 @@ body::-webkit-scrollbar-thumb {
                     color: var(--var-color-secondary);
                     padding: 10px;
                     border-radius: 5px;
-                    font-size: 1.2rem;
+                    font-size: 1.1rem;
                     outline: none;
                     background-color: #6a6a6a7e;
                     border: 1px solid var(--var-color-secondary);
@@ -1069,7 +1081,7 @@ body::-webkit-scrollbar-thumb {
                     color: var(--var-color-secondary);
                     padding: 10px;
                     border-radius: 5px;
-                    font-size: 1.2rem;
+                    font-size: 1.1rem;
                     outline: none;
                     background-color: #6a6a6a7e;
                     border: 1px solid var(--var-color-secondary);

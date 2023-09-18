@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Contact, Navigation, Navigation_arrow } from './components/navigation'
 import { Project } from './components/project';
 import { Skill } from './components/skill';
@@ -10,17 +10,48 @@ import { motion } from "framer-motion";
 import { Fondo } from "./components/fondo"
 import './App.css'
 
+function linksNone() {
+  document.getElementById('linkAbout').style.color = "rgb(255, 255, 255)";
+  document.getElementById('linkProjects').style.color = "rgb(255, 255, 255)";
+  document.getElementById('linkSkills').style.color = "rgb(255, 255, 255)";
+  document.getElementById('linkContacto').style.color = "rgb(255, 255, 255)";
+}
+
+function linksstyle(et) {
+  document.getElementById(et).style.color = "rgb(227, 114, 0)";
+}
+
 function App() {
+  useEffect(() => {
+    linksstyle('linkAbout');
+  }, [])
   window.onscroll = () => {
     let div = document.getElementById('about').getBoundingClientRect().bottom;
     let divtop = document.getElementById('about').getBoundingClientRect().top;
 
+    if (document.getElementById('about').getBoundingClientRect().bottom > 300) {
+      linksNone();
+      linksstyle('linkAbout');
+
+    } else if (document.getElementById('projects').getBoundingClientRect().bottom > 300) {
+      linksNone();
+      linksstyle('linkProjects');
+
+    } else if (document.getElementById('skills').getBoundingClientRect().bottom > 300) {
+      linksNone();
+      linksstyle('linkSkills');
+
+    } else if (document.getElementById('contacto').getBoundingClientRect().bottom > 300) {
+      linksNone();
+      linksstyle('linkContacto');
+    }
+
     if (div > 500) {
-      document.getElementById('navigation-left-arrow').style.left = '-220px';
+      document.getElementById('navigation-left-arrow').style.left = '-200px';
       document.getElementById('navigation-left-arrow').style.opacity = '0';
 
     } else {
-      document.getElementById('navigation-left-arrow').style.left = '-170px';
+      document.getElementById('navigation-left-arrow').style.left = '-140px';
       document.getElementById('navigation-left-arrow').style.opacity = '1';
     }
 
@@ -49,11 +80,11 @@ function App() {
             <h1>Gonzalo Luna</h1>
             <p>
               Hola 👋, soy un Desarrollador web junior, siempre dispuesto a seguir aprendiendo y enfrentar nuevos desafíos.<br /><br />
-              Egresado y titulado de la carrera técnica de ingeniero de software, Actualmente estoy mejorando de manera autodidacta mis habilidades en el mundo del desarrollo web.
+              Egresado y titulado de la carrera técnica de ingeniero de software en el cual aprendí muchas cosas sobre el mundo de la programación y la tecnología, actualmente estoy mejorando de manera autodidacta mis habilidades en el desarrollo web.
               <br /><br /></p>
             <div className='about-body-contact'>
-              <motion.a whileHover={{scale: 1.1}} href="https://github.com/GonzaloDanielL" target="_blank"><AiFillGithub /></motion.a>
-              <motion.a whileHover={{scale: 1.1}} href="https://www.linkedin.com/in/gonzalo-luna-diaz/" target="_blank"><AiFillLinkedin /></motion.a>
+              <motion.a whileHover={{ scale: 1.1 }} href="https://github.com/GonzaloDanielL" target="_blank"><AiFillGithub /></motion.a>
+              <motion.a whileHover={{ scale: 1.1 }} href="https://www.linkedin.com/in/gonzalo-luna-diaz/" target="_blank"><AiFillLinkedin /></motion.a>
             </div>
             <a className='boton-cv' href="./GonzaloCV.pdf" target='_blank'>Descargar CV</a>
           </div>
@@ -69,7 +100,6 @@ function App() {
         <div className='projects-title'>
           <h1>Proyectos</h1>
         </div>
-
         <div className='projects-container'>
           <Project img="./sistemajgya.png" tipo="bloqueado" github="https://github.com/" title="Sistema JGyA" des="Proyecto freelancer para la administración de productos como el registro, venta y la compra del mismo, la aplicación también muestra gráficos con los datos registrados" tec={["HTML", "CSS", "PHP", "Bootstrap", "JavaScript", "jQuery", "MySQL"]} />
 

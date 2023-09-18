@@ -26,10 +26,10 @@ export function Navigation() {
             <nav className="navigation-nav">
                 <h1 className='nav-title'>Gonzalo Luna</h1>
                 <ul className="nav-list-container">
-                    <motion.li whileHover={{ scale: 1.1 }}><a href="#about">Acerca de</a></motion.li>
-                    <motion.li whileHover={{ scale: 1.1 }}><a href="#projects">Proyectos</a></motion.li>
-                    <motion.li whileHover={{ scale: 1.1 }}><a href="#skills">Habilidades</a></motion.li>
-                    <motion.li whileHover={{ scale: 1.1 }}><a href="#contacto">Contacto</a></motion.li>
+                    <motion.li  whileHover={{ scale: 1.1 }}><a href="#about" id="linkAbout">Acerca de</a></motion.li>
+                    <motion.li whileHover={{ scale: 1.1 }}><a href="#projects" id="linkProjects">Proyectos</a></motion.li>
+                    <motion.li whileHover={{ scale: 1.1 }}><a href="#skills" id="linkSkills">Habilidades</a></motion.li>
+                    <motion.li whileHover={{ scale: 1.1 }}><a href="#contacto" id="linkContacto">Contacto</a></motion.li>
                 </ul>
             </nav>
         </div>
