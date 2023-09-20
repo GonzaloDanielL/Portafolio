@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Contact, Navigation, Navigation_arrow } from './components/navigation'
 import { Project } from './components/project';
 import { Skill } from './components/skill';
+import { Certificados } from './components/certificados';
 import { AiFillHtml5, AiOutlineArrowUp, AiFillGithub, AiFillLinkedin } from 'react-icons/AI';
 import { IoLogoCss3 } from 'react-icons/io';
 import { BiLogoJavascript, BiLogoReact, BiLogoTailwindCss } from 'react-icons/bi';
@@ -25,6 +26,7 @@ function App() {
   useEffect(() => {
     linksstyle('linkAbout');
   }, [])
+
   window.onscroll = () => {
     let div = document.getElementById('about').getBoundingClientRect().bottom;
     let divtop = document.getElementById('about').getBoundingClientRect().top;
@@ -79,7 +81,7 @@ function App() {
           <div className='about-body-des'>
             <h1>Gonzalo Luna</h1>
             <p>
-              Hola 👋, soy un Desarrollador web junior, siempre dispuesto a seguir aprendiendo y enfrentar nuevos desafíos.<br /><br />
+              Hola 👋, soy un apasionado desarrollador web junior, siempre dispuesto a seguir aprendiendo y enfrentar nuevos desafíos.<br /><br />
               Egresado y titulado de la carrera técnica de ingeniero de software en el cual aprendí muchas cosas sobre el mundo de la programación y la tecnología, actualmente estoy mejorando de manera autodidacta mis habilidades en el desarrollo web.
               <br /><br /></p>
             <div className='about-body-contact'>
@@ -118,32 +120,53 @@ function App() {
 
       </section>
 
+
       <section className='sub-container c-3' id='skills'>
 
         <div className='skill-title'>
-          <h1>Habilidades</h1>
+          <h1>Habilidades y certificados</h1>
         </div>
-        <div className='skill-container'>
 
-          <Skill img={<IoLogoCss3 />} color="blue" />
+        <div className='c-3-sub'>
+          <h1>Habilidades</h1>
+          <div className='skill-container'>
 
-          <Skill img={<AiFillHtml5 />} color="rgb(255, 106, 0)" />
+            <Skill img={<IoLogoCss3 />} color="blue" />
 
-          <Skill img={<BiLogoJavascript />} color="rgb(255, 204, 0)" />
+            <Skill img={<AiFillHtml5 />} color="rgb(255, 106, 0)" />
 
-          <Skill img={<BiLogoReact />} color="rgb(0, 213, 255)" />
+            <Skill img={<BiLogoJavascript />} color="rgb(255, 204, 0)" />
 
-          <Skill img={<BiLogoTailwindCss />} color="rgb(0, 229, 255)" />
+            <Skill img={<BiLogoReact />} color="rgb(0, 213, 255)" />
 
-          <Skill img={<SiPhp />} color="rgb(0, 128, 255)" />
+            <Skill img={<BiLogoTailwindCss />} color="rgb(0, 229, 255)" />
 
-          <Skill img={<SiMysql />} color="rgb(0, 108, 202)" />
+            <Skill img={<SiPhp />} color="rgb(0, 128, 255)" />
 
-          <Skill img={<SiBootstrap />} color="rgb(109, 0, 243)" />
+            <Skill img={<SiMysql />} color="rgb(0, 108, 202)" />
 
+            <Skill img={<SiBootstrap />} color="rgb(109, 0, 243)" />
+
+          </div>
+        </div>
+
+        <div className='c-3-sub'>
+          <h1>Certificados</h1>
+          <div className='certificados-container'>
+
+            <Certificados title="Diseño web responsivo" escuela="FreeCodeCamp" url="https://cdn.discordapp.com/attachments/894744872161017956/1153841650716647444/Captura_de_pantalla_2023-09-19_185421.png" />
+
+            <Certificados title="Titulo técnico Ig. software con I.A" escuela="SENATI" url="https://cdn.discordapp.com/attachments/894744872161017956/1153848537512153148/Captura_de_pantalla_2023-09-19_192139.png" />
+
+            <Certificados title="Desarrollo web I HTML" escuela="Google activate" url="https://cdn.discordapp.com/attachments/894744872161017956/1153848536920756254/Captura_de_pantalla_2023-09-19_192047.png" />
+
+            <Certificados title="Desarrollo web II CSS" escuela="Google activate" url="https://cdn.discordapp.com/attachments/894744872161017956/1153848537193394218/Captura_de_pantalla_2023-09-19_192107.png" />
+
+          </div>
         </div>
 
       </section>
+
 
       <section className='sub-container c-4' id="contacto">
 
@@ -154,15 +177,15 @@ function App() {
         <div className='contacto-body'>
           <form action="https://formsubmit.co/gonzaloluna738@gmail.com" method="post" className='contacto-form'>
             {/*       <div className='form-item'> */}
-            <label for="name">Nombre: </label>
+            <label htmlFor="name">Nombre: </label>
             <input id="name" name="name" type="text" />
             {/*            </div>
             <div className='form-item'> */}
-            <label for="email">Email: </label>
+            <label htmlFor="email">Email: </label>
             <input id="email" name="email" type="text" />
             {/*             </div>
             <div className='form-item'> */}
-            <label for="description">Descripción: </label>
+            <label htmlFor="description">Descripción: </label>
             <textarea id="description" name="description" type="text"></textarea>
             {/*             </div>
             <div className='form-item'> */}
@@ -180,6 +203,7 @@ function App() {
           <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="#about">{<AiOutlineArrowUp />}Regresar arriba{<AiOutlineArrowUp />}</motion.a>
         </footer>
       </section>
+
 
     </motion.div>
   )
