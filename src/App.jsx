@@ -83,7 +83,7 @@ function App() {
           <div className='about-body-des'>
             <h1>Gonzalo Luna</h1>
             <p>
-              Hola 👋, soy un apasionado desarrollador web junior, siempre dispuesto a seguir aprendiendo y enfrentar nuevos desafíos.<br /><br />
+              Hola 👋 soy <h3>Gonzalo </h3>un apasionado desarrollador web junior, siempre dispuesto a seguir aprendiendo y enfrentar nuevos desafíos.<br /><br />
               Egresado y titulado de la carrera técnica de ingeniero de software en el cual aprendí muchas cosas sobre el mundo de la programación y la tecnología, actualmente estoy mejorando de manera autodidacta mis habilidades en el desarrollo web.
               <br /><br /></p>
             <div className='about-body-contact'>
@@ -93,7 +93,7 @@ function App() {
             <a className='boton-cv' href="./GonzaloCV.pdf" target='_blank'>Descargar CV</a>
           </div>
           <div className='about-body-img'>
-            <img src="./foto.png" alt="" />
+            <img src="https://cdn.discordapp.com/attachments/894744872161017956/1154088763371311174/portafolio-solopng-removebg-preview.png" alt="" />
           </div>
         </div>
       </header>

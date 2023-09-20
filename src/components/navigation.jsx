@@ -24,7 +24,7 @@ export function Navigation() {
     return (
         <div className="navigation-container" id="navigation-container">
             <nav className="navigation-nav">
-                <h1 className='nav-title'>Gonzalo Luna</h1>
+                <h1 className='nav-title'>Gonzalo L.</h1>
                 <ul className="nav-list-container">
                     <motion.li  whileHover={{ scale: 1.1 }}><a href="#about" id="linkAbout">Acerca de</a></motion.li>
                     <motion.li whileHover={{ scale: 1.1 }}><a href="#projects" id="linkProjects">Proyectos</a></motion.li>

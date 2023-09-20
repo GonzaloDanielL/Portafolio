@@ -372,6 +372,7 @@ body::-webkit-scrollbar-thumb {
         & .nav-title {
             font-size: 3.2rem;
             flex: auto;
+            
         }
 
         & .nav-list-container {
@@ -472,11 +473,11 @@ body::-webkit-scrollbar-thumb {
         justify-content: center;
         align-items: center;
         gap: 40px;
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 80px;
+        padding-right: 80px;
 
         & .about-body-des {
-            flex: 50%;
+            flex: 75%;
             font-size: 1.5rem;
             height: fit-content;
             display: flex;
@@ -492,6 +493,11 @@ body::-webkit-scrollbar-thumb {
             & p {
                 margin-top: 30px;
                 height: fit-content;
+
+                & h3{
+                    font-size: 1.4rem;
+                    display: inline;
+                }
 
             }
 
@@ -526,14 +532,14 @@ body::-webkit-scrollbar-thumb {
         }
 
         & .about-body-img {
-            height: 450px;
+            width: 35%;
             display: flex;
 
             & img {
                 object-fit: fill;
-                width: auto;
-                height: 100%;
+                width: 100%;
                 border-radius: 10px;
+                transform: scaleX(-1);
             }
         }
     }
@@ -976,7 +982,8 @@ body::-webkit-scrollbar-thumb {
             }
 
             & .about-body-img {
-                height: 400px;
+                flex: auto;
+                max-width: 200px;
                 border-radius: 50px;
                 display: flex;
                 justify-content: center;
@@ -1247,7 +1254,8 @@ body::-webkit-scrollbar-thumb {
 
         & .contacto-body {
             flex: auto;
-            min-width: 300px;
+            min-width: auto;
+            max-width: 300px;
             background-color: var(--var-fondo-card);
             padding: 20px;
             border-radius: 10px;
