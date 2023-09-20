@@ -3,6 +3,7 @@ import { Contact, Navigation, Navigation_arrow } from './components/navigation'
 import { Project } from './components/project';
 import { Skill } from './components/skill';
 import { Certificados } from './components/certificados';
+import { Modal } from './components/modal';
 import { AiFillHtml5, AiOutlineArrowUp, AiFillGithub, AiFillLinkedin } from 'react-icons/AI';
 import { IoLogoCss3 } from 'react-icons/io';
 import { BiLogoJavascript, BiLogoReact, BiLogoTailwindCss } from 'react-icons/bi';
@@ -75,6 +76,7 @@ function App() {
       <Contact />
       <Navigation_arrow />
       <Fondo />
+      <Modal />
 
       <header className='sub-container c-1' id='about'>
         <div className='about-body'>
@@ -108,9 +110,6 @@ function App() {
           <Project img="./mealscocktails.png" tipo="enlace" link="https://gonzalodaniell.github.io/MealsAndCocktails/" github="https://github.com/GonzaloDanielL/MealsAndCocktails" title="Meals and cocktails" des="Proyecto personal que lista y muestra recetas y ingredientes de comidas y cócteles" tec={["HTML", "CSS", "ReactJS", "JavaScript", "Tailwind CSS"]} />
 
           <Project img="./animedetails.png" tipo="enlace" link="https://gonzalodaniell.github.io/Anime-Details/" github="https://github.com/GonzaloDanielL/Anime-Details" title="Anime details" des="Proyecto personal que lista animes y muestra su información como capítulos, genero, plataformas de streaming, etc" tec={["HTML", "CSS", "ReactJS", "JavaScript"]} />
-
-          <Project img="./conteo.png" tipo="enlace" link="https://gonzalodaniell.github.io/Conteo-Dinero/" github="https://github.com/GonzaloDanielL/Conteo-Dinero" title="Suma y conteo (S/.)" des="Proyecto personal para sumar dinero" tec={["HTML", "CSS", "ReactJS", "JavaScript", "Tailwind CSS"]} />
-
 
           <Project img="./suscripciones.png" tipo="imagen" github="https://github.com/GonzaloDanielL/Suscripciones" title="Administrar suscripciones" des="Proyecto personal que registra suscripciones y sus proveedores" tec={["HTML", "PHP", "Bootstrap", "JavaScript", "MySQL"]} />
 
@@ -176,21 +175,18 @@ function App() {
 
         <div className='contacto-body'>
           <form action="https://formsubmit.co/gonzaloluna738@gmail.com" method="post" className='contacto-form'>
-            {/*       <div className='form-item'> */}
+
             <label htmlFor="name">Nombre: </label>
             <input id="name" name="name" type="text" />
-            {/*            </div>
-            <div className='form-item'> */}
+
             <label htmlFor="email">Email: </label>
             <input id="email" name="email" type="text" />
-            {/*             </div>
-            <div className='form-item'> */}
+
             <label htmlFor="description">Descripción: </label>
             <textarea id="description" name="description" type="text"></textarea>
-            {/*             </div>
-            <div className='form-item'> */}
+
             <input name="Submit" className='contacto-input-submit' type="submit" value="Enviar" />
-            {/*             </div> */}
+
           </form>
         </div>
 
