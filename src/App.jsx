@@ -97,7 +97,7 @@ function App() {
               <motion.a whileHover={{ scale: 1.1 }} href="https://github.com/GonzaloDanielL" target="_blank"><AiFillGithub /></motion.a>
               <motion.a whileHover={{ scale: 1.1 }} href="https://www.linkedin.com/in/gonzalo-luna-diaz/" target="_blank"><AiFillLinkedin /></motion.a>
             </div>
-            <a className='boton-cv' href="./GonzaloCV.pdf" target='_blank'>Descargar CV</a>
+            <a className='boton-cv' href="https://cdn.discordapp.com/attachments/894744872161017956/1157646474931343501/GonzaloCV.pdf?ex=65195dcb&is=65180c4b&hm=0da224faa1c9d4bff112ae8cbf125d4b7eb0ce3dcb3b685829b9090129fc7bc1&" target='_blank'>Descargar CV</a>
           </div>
           <div className='about-body-img'>
             <img src="https://cdn.discordapp.com/attachments/894744872161017956/1154088763371311174/portafolio-solopng-removebg-preview.png" alt="" />
@@ -114,15 +114,15 @@ function App() {
             <h1>Proyectos</h1>
           </div>
           <div className='projects-container'>
-            <Project img="./sistemajgya.png" tipo="bloqueado" github="https://github.com/" title="Sistema JGyA" des="Proyecto freelancer para la administración de productos como el registro, venta y la compra del mismo, la aplicación también muestra gráficos con los datos registrados" tec={["HTML", "CSS", "PHP", "Bootstrap", "JavaScript", "jQuery", "MySQL"]} />
+            <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1157650084859744286/sistemajgya.png?ex=65196128&is=65180fa8&hm=44d910225297ab7698ea7fa349c250633044cc971ac458e143154d0eeaa78274&" tipo="bloqueado" github="https://github.com/" title="Sistema JGyA" des="Proyecto freelancer para la administración de productos como el registro, venta y la compra del mismo, la aplicación también muestra gráficos con los datos registrados" tec={["HTML", "CSS", "PHP", "Bootstrap", "JavaScript", "jQuery", "MySQL"]} />
 
-            <Project img="./mealscocktails.png" tipo="enlace" link="https://gonzalodaniell.github.io/MealsAndCocktails/" github="https://github.com/GonzaloDanielL/MealsAndCocktails" title="Meals and cocktails" des="Proyecto personal que lista y muestra recetas y ingredientes de comidas y cócteles" tec={["HTML", "CSS", "ReactJS", "JavaScript", "Tailwind CSS"]} />
+            <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1157648938120261694/Captura_de_pantalla_2023-09-30_065805.png?ex=65196016&is=65180e96&hm=32023a44ca8ae2c6d5789678ae32fbc67e2ede881d54a7a995c7b0bea6c1898a&" tipo="enlace" link="https://gonzalodaniell.github.io/MealsAndCocktails/" github="https://github.com/GonzaloDanielL/MealsAndCocktails" title="Meals and cocktails" des="Proyecto personal que lista y muestra recetas e ingredientes de comidas y cócteles" tec={["HTML", "CSS", "ReactJS", "JavaScript", "Tailwind CSS"]} />
 
-            <Project img="./animedetails.png" tipo="enlace" link="https://gonzalodaniell.github.io/Anime-Details/" github="https://github.com/GonzaloDanielL/Anime-Details" title="Anime details" des="Proyecto personal que lista animes y muestra su información como capítulos, genero, plataformas de streaming, etc" tec={["HTML", "CSS", "ReactJS", "JavaScript"]} />
+            <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1157649891863048292/Captura_de_pantalla_2023-09-12_123103.png?ex=651960fa&is=65180f7a&hm=76a18601fd7550abffcaacb441f76b687a9ec609510bee9071e7ea1cfad56a9e&" tipo="enlace" link="https://gonzalodaniell.github.io/Anime-Details/" github="https://github.com/GonzaloDanielL/Anime-Details" title="Anime details" des="Proyecto personal que muestra información de animes como capítulos, genero, plataformas de streaming y mas" tec={["HTML", "CSS", "ReactJS", "JavaScript"]} />
 
-            <Project img="./suscripciones.png" tipo="imagen" github="https://github.com/GonzaloDanielL/Suscripciones" title="Administrar suscripciones" des="Proyecto personal que registra suscripciones y sus proveedores" tec={["HTML", "PHP", "Bootstrap", "JavaScript", "MySQL"]} />
+            <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1157649891582021713/suscripciones.png?ex=651960fa&is=65180f7a&hm=36f2117ead396706f34c54e59b83f1a4bb10f54e66b6b57fba5bb64c0d0edfb4&" tipo="imagen" github="https://github.com/GonzaloDanielL/Suscripciones" title="Administrar suscripciones" des="Proyecto personal que registra suscripciones y sus proveedores" tec={["HTML", "PHP", "Bootstrap", "JavaScript", "MySQL"]} />
 
-            <Project img="./Boletas.png" tipo="imagen" github="https://github.com/GonzaloDanielL/AdminCompras" title="Boletas o compras" des="Proyecto personal que registra compras, también muestra gráficos con los datos registrados" tec={["HTML", "PHP", "Bootstrap", "JavaScript", "jQuery", "MySQL"]} />
+            <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1157649891233890314/Boletas.png?ex=651960fa&is=65180f7a&hm=3068f9974a621f835e63a6b005cff63bb2b12e19979a9f73755c74f3779b7e56&" tipo="imagen" github="https://github.com/GonzaloDanielL/AdminCompras" title="Boletas o compras" des="Proyecto personal que registra compras, también muestra gráficos con los datos registrados" tec={["HTML", "PHP", "Bootstrap", "JavaScript", "jQuery", "MySQL"]} />
 
           </div>
 

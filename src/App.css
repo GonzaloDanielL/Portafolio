@@ -1,18 +1,25 @@
 :root {
     --var-color-primary: rgb(227, 114, 0);
     --var-color-secondary: rgb(255, 255, 255);
-    --var-fondo-card: #353535;
+    --var-bg-card: #2a2a2a;
+    --var-bg: #202020;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Rubik Dirt';
     src: url("Rubik_Dirt/RubikDirt-Regular.ttf")
 }
 
 @font-face {
-    font-family: 'Stylish'; /* Nombre de la fuente */
+    font-family: 'Stylish'; 
     src: url("Stylish/Stylish-Regular.ttf");
-  }
+  } */
+
+body {
+    margin: 0;
+    background-color: var(--var-bg);
+    color: rgb(255, 255, 255);
+}
 
 * {
     font-family: 'Stylish', sans-serif;
@@ -249,10 +256,10 @@ body::-webkit-scrollbar-thumb {
 
 
     & .modal-sub-container {
-        background-color: var(--var-fondo-card);
+        background-color: var(--var-bg-card);
         width: 50%;
         padding: 40px;
-        border: 2px solid var(--var-color-secondary);
+        border: 2px solid rgb(211, 211, 211);
         border-radius: 10px;
 
 
@@ -592,18 +599,18 @@ body::-webkit-scrollbar-thumb {
         height: 100%;
         display: flex;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 40px;
         justify-content: center;
 
 
         & .projects-card {
             position: relative;
-            width: 330px;
+            width: 320px;
             height: auto;
-            border: 2px solid rgb(255, 255, 255);
-            color: #ffffff;
+            border: 2px solid rgb(211, 211, 211);
+            color: var(--var-color-secondary);
             border-radius: 10px;
-            background-color: var(--var-fondo-card);
+            background-color: var(--var-bg-card);
             transition: all 0.2s ease-in-out;
 
 
@@ -620,9 +627,9 @@ body::-webkit-scrollbar-thumb {
                 align-items: center;
                 opacity: 0;
                 transition: all 0.2s ease-in-out;
+                color: var(--var-color-secondary);
 
                 & div {
-                    color: #ffffff;
                     display: flex;
                     flex-direction: row;
                     gap: 20px;
@@ -630,11 +637,9 @@ body::-webkit-scrollbar-thumb {
                     & a {
                         font-size: 3rem;
                         cursor: pointer;
-                        color: #ffffff;
 
                         & label {
                             cursor: pointer;
-                            color: #ffffff;
                         }
                     }
                 }
@@ -679,7 +684,7 @@ body::-webkit-scrollbar-thumb {
                         & span {
                             font-size: 1rem;
                             padding: 10px;
-                            background-color: #282828;
+                            background-color: var(--var-bg);
                             border-radius: 10px;
                         }
                     }
@@ -734,20 +739,20 @@ body::-webkit-scrollbar-thumb {
             height: 100%;
             display: flex;
             flex-wrap: wrap;
-            gap: 25px;
+            gap: 30px;
             padding: 20px;
             justify-content: center;
             overflow: hidden;
 
             & .certificados-card {
                 border-radius: 10px;
-                border: 2px solid var(--var-color-secondary);
-                background-color: var(--var-fondo-card);
+                border: 2px solid rgb(211, 211, 211);
+                background-color: var(--var-bg-card);
                 padding: 20px;
                 display: flex;
                 flex-direction: row;
                 gap: 15px;
-                max-width: 500px;
+                max-width: 450px;
                 transition: all 0.2s ease;
 
                 & .cer-card-title {
@@ -840,10 +845,10 @@ body::-webkit-scrollbar-thumb {
     & .contacto-body {
         flex: auto;
         min-width: 400px;
-        background-color: var(--var-fondo-card);
         padding: 20px;
         border-radius: 10px;
-        border: 2px solid var(--var-color-secondary);
+        border: 2px solid rgb(211, 211, 211);
+        background-color: var(--var-bg-card);
 
         & .contacto-form {
             display: flex;
@@ -1052,12 +1057,12 @@ body::-webkit-scrollbar-thumb {
 
             & .projects-card {
                 position: relative;
-                width: 330px;
+                width: 320px;
                 height: auto;
-                border: 2px solid rgb(255, 255, 255);
+                border: 2px solid rgb(211, 211, 211);
                 color: #ffffff;
                 border-radius: 10px;
-                background-color: #353535;
+                background-color: var(--var-bg-card);
                 transition: all 0.2s ease-in-out;
 
 
@@ -1074,9 +1079,9 @@ body::-webkit-scrollbar-thumb {
                     align-items: center;
                     opacity: 0;
                     transition: all 0.2s ease-in-out;
+                    color: var(--var-color-secondary);
 
                     & div {
-                        color: #ffffff;
                         display: flex;
                         flex-direction: row;
                         gap: 20px;
@@ -1084,10 +1089,8 @@ body::-webkit-scrollbar-thumb {
                         & a {
                             font-size: 3rem;
                             cursor: pointer;
-                            color: #ffffff;
 
                             & label {
-                                color: #ffffff;
                             }
                         }
                     }
@@ -1132,7 +1135,7 @@ body::-webkit-scrollbar-thumb {
                             & span {
                                 font-size: 1rem;
                                 padding: 10px;
-                                background-color: #282828;
+                                background-color: var(--var-bg);
                                 border-radius: 10px;
                             }
                         }
@@ -1191,8 +1194,8 @@ body::-webkit-scrollbar-thumb {
 
                 & .certificados-card {
                     border-radius: 10px;
-                    border: 1px solid var(--var-color-secondary);
-                    background-color: #353535;
+                    border: 2px solid rgb(211, 211, 211);
+                    background-color: var(--var-bg-card);
                     padding: 10px;
                     display: flex;
                     flex-direction: row;
@@ -1279,10 +1282,10 @@ body::-webkit-scrollbar-thumb {
             flex: auto;
             min-width: auto;
             max-width: 300px;
-            background-color: var(--var-fondo-card);
+            background-color: var(--var-bg-card);
             padding: 20px;
             border-radius: 10px;
-            border: 2px solid var(--var-color-secondary);
+            border: 2px solid rgb(211, 211, 211);
 
 
             & .contacto-form {

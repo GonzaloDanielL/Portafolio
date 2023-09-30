@@ -25,12 +25,6 @@ ul {
  * Remove the margin in all browsers.
  */
 
-body {
-  margin: 0;
-  background-color: #282828;
-  color: rgb(255, 255, 255);
-}
-
 
 /**
  * Render the `main` element consistently in IE.
