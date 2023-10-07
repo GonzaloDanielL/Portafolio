@@ -114,7 +114,7 @@ function App() {
             <h1>Proyectos</h1>
           </div>
           <div className='projects-container'>
-            <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1159160104977965236/Captura_de_pantalla_2023-10-04_110736.png?ex=651edf79&is=651d8df9&hm=4fa8d3a3c14bbf2d416deef66fb0baf1eefdd3b1bfe9ff3982a9bb89396e6d6a&" github="https://github.com/GonzaloDanielL/ChaloPage" tipo="imagen" title="ChaloX Page" des="Proyecto para mostrar todos mis proyectos personales (esta pagina aun no esta terminada)" tec={["HTML", "CSS", "JavaScript", "ReactJS"]} />
+            <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1159160104977965236/Captura_de_pantalla_2023-10-04_110736.png?ex=651edf79&is=651d8df9&hm=4fa8d3a3c14bbf2d416deef66fb0baf1eefdd3b1bfe9ff3982a9bb89396e6d6a&" github="https://github.com/GonzaloDanielL/ChaloPage" link="https://gonzalodaniell.github.io/ChaloPage/" tipo="enlace" title="ChaloX Page" des="Sitio para mostrar todos mis proyectos personales (esta pagina aun no esta terminada)" tec={["HTML", "CSS", "JavaScript", "ReactJS"]} />
 
             <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1157650084859744286/sistemajgya.png?ex=65196128&is=65180fa8&hm=44d910225297ab7698ea7fa349c250633044cc971ac458e143154d0eeaa78274&" tipo="bloqueado" title="Sistema JGyA" des="Proyecto freelancer para la administración de productos como el registro, venta y la compra del mismo, la aplicación también muestra gráficos con los datos registrados" tec={["HTML", "CSS", "PHP", "Bootstrap", "JavaScript", "jQuery", "MySQL"]} />
 
