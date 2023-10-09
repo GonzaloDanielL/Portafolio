@@ -1396,7 +1396,6 @@ body::-webkit-scrollbar-thumb {
 
 
         & .modal-sub-container {
-            background-color: var(--var-fondo-card);
             width: 90%;
             padding: 20px;
             border: 2px solid var(--var-color-secondary);
