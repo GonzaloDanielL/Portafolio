@@ -7,29 +7,16 @@ function mostrar_nav_arrow() {
     document.getElementById('navigation-left-arrow').style.left = "0px";
 }
 
-export function Contact() {
-    return (
-        <div className="navigation-container-right">
-            <nav className="navigation-nav">
-                <ul className="nav-list-container">
-                    <motion.li whileHover={{scale: 1.1 }}><a href="https://github.com/GonzaloDanielL" target="_blank"><AiFillGithub /></a></motion.li>
-                    <motion.li whileHover={{scale: 1.1 }}><a href="https://www.linkedin.com/in/gonzalo-luna-diaz/" target="_blank"><AiFillLinkedin /></a></motion.li>
-                </ul>
-            </nav>
-        </div>
-    )
-}
-
 export function Navigation() {
     return (
         <div className="navigation-container" id="navigation-container">
             <nav className="navigation-nav">
                 <h1 className='nav-title'>Gonzalo L.</h1>
                 <ul className="nav-list-container">
-                    <motion.li  whileHover={{ scale: 1.1 }}><a href="#about" id="linkAbout">Acerca de</a></motion.li>
-                    <motion.li whileHover={{ scale: 1.1 }}><a href="#projects" id="linkProjects">Proyectos</a></motion.li>
-                    <motion.li whileHover={{ scale: 1.1 }}><a href="#skills" id="linkSkills">Habilidades</a></motion.li>
-                    <motion.li whileHover={{ scale: 1.1 }}><a href="#contacto" id="linkContacto">Contacto</a></motion.li>
+                    <li><a href="#about" id="linkAbout">Acerca de</a></li>
+                    <li><a href="#projects" id="linkProjects">Proyectos</a></li>
+                    <li><a href="#skills" id="linkSkills">Habilidades</a></li>
+                    <li><a href="#contacto" id="linkContacto">Contacto</a></li>
                 </ul>
             </nav>
         </div>

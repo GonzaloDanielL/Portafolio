@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Contact, Navigation, Navigation_arrow } from './components/navigation'
+import { Navigation, Navigation_arrow } from './components/navigation'
 import { Project } from './components/project';
 import { Skill } from './components/skill';
 import { Certificados } from './components/certificados';
@@ -78,7 +78,6 @@ function App() {
       transition={{ duration: 4 }}
       className='main-container'>
       <Navigation />
-      <Contact />
       <Navigation_arrow />
       <Fondo />
       <Modal />
@@ -100,7 +99,7 @@ function App() {
             <a className='boton-cv' href="https://cdn.discordapp.com/attachments/894744872161017956/1157646474931343501/GonzaloCV.pdf?ex=65195dcb&is=65180c4b&hm=0da224faa1c9d4bff112ae8cbf125d4b7eb0ce3dcb3b685829b9090129fc7bc1&" target='_blank'>Descargar CV</a>
           </div>
           <div className='about-body-img'>
-            <img src="https://cdn.discordapp.com/attachments/894744872161017956/1154088763371311174/portafolio-solopng-removebg-preview.png" alt="" />
+            <img src="https://cdn.discordapp.com/attachments/894744872161017956/1164000006391484516/perfil_marca-2.png?ex=65419e7b&is=652f297b&hm=c2072cb7aaabb7381ef9a827a95639bfa0c2359b9ccfc38a3b21b58f2bba590f&" alt="" />
           </div>
         </div>
       </header>
