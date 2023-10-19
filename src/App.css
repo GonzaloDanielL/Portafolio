@@ -23,7 +23,7 @@ body {
 
 a {
     background-color: transparent;
-  }
+}
 
 h1,
 h2,
@@ -91,61 +91,112 @@ body::-webkit-scrollbar-thumb {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
+    width: 100%;
     height: 100vh;
-    width: 100vw;
+    background-color: #2020209f;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #35353564;
     z-index: 20;
-    overflow: auto;
-    transition: all 0.3s ease;
-    visibility: hidden;
+    border: none;
     opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in;
 
-
-    & .modal-sub-container {
+    & .modal-container {
+        border: 1px solid var(--var-color-tertiary);
         background-color: var(--var-bg-card);
-        width: 50%;
-        padding: 40px;
-        border: 2px solid rgb(211, 211, 211);
+        width: 70%;
         border-radius: 10px;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
 
-
-        & .modal-body {
+        & .modal-cabecera {
             display: flex;
-            gap: 20px;
-            flex-direction: column;
+            flex-direction: row;
+            align-items: center;
 
             & .modal-title {
-                display: flex;
-                width: 100%;
-
-                & h1 {
-                    text-align: left;
-                    flex: auto;
-                    height: fit-content;
-                }
-
-                & button {
-                    background-color: transparent;
-                    outline: none;
-                    border: none;
-                    padding: 0;
-                    right: 0;
-                    color: var(--var-color-primary);
-                    font-size: 35px;
-                    cursor: pointer;
-                }
+                flex: auto;
+                text-align: left;
+                height: fit-content;
+                font-size: var(--var-subtitulos);
             }
 
+            & button {
+                padding: 0;
+                margin: 0;
+                font-size: 2.8rem;
+                display: flex;
+                color: var(--var-color-primary);
+                background-color: transparent;
+                border: none;
+            }
+        }
+
+        & .modal-content {
+            height: 100%;
+        }
+    }
+}
+
+.carrusel-container {
+    width: 100%;
+    height: 500px;
+    position: relative;
+
+    & .carrusel {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+
+        & .slide {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            flex: auto;
+            transition: all 0.5s ease;
+            visibility: hidden;
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+
             & img {
-                width: 100%;
+                max-width: 100%;
+                height: 100%;
                 border-radius: 10px;
             }
         }
+    }
+
+    & .btn {
+        font-size: 3.5rem;
+        position: absolute;
+        top: 40%;
+        height: fit-content;
+
+        & button {
+            margin: 0;
+            padding: 0;
+            color: var(--var-color-secondary);
+            border: none;
+            display: flex;
+            background-color: transparent;
+            cursor: pointer;
+
+        }
+    }
+
+    & .left {
+        left: 10px;
+    }
+
+    & .right {
+        right: 10px;
     }
 }
 
@@ -265,6 +316,7 @@ body::-webkit-scrollbar-thumb {
 
             & li {
                 transition: all 0.2s ease-in-out;
+
                 & a {
                     text-decoration: none;
                     border-bottom: 2px solid transparent;
@@ -274,7 +326,7 @@ body::-webkit-scrollbar-thumb {
                 }
             }
 
-            & li:hover{
+            & li:hover {
                 transform: scale(1.1);
             }
         }
@@ -486,9 +538,25 @@ body::-webkit-scrollbar-thumb {
                         cursor: pointer;
 
                         & label {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
                             color: var(--var-color-tertiary);
                             cursor: pointer;
                         }
+                    }
+
+                    & button {
+                        background-color: transparent;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0;
+                        margin: 0;
+                        border: none;
+                        font-size: 3rem;
+                        color: var(--var-color-tertiary);
+                        cursor: pointer;
                     }
                 }
             }
@@ -837,6 +905,7 @@ body::-webkit-scrollbar-thumb {
                 max-width: 200px;
                 justify-content: center;
                 align-items: center;
+
                 & img {
                     border-radius: 50px;
                 }
@@ -864,7 +933,7 @@ body::-webkit-scrollbar-thumb {
                 & .projects-card-content {
 
                     & .projects-card-body {
-                        
+
                         & .projects-card-body-des {
 
                             & h2 {
@@ -995,20 +1064,64 @@ body::-webkit-scrollbar-thumb {
     }
 
     .modal {
-        & .modal-sub-container {
-            width: 90%;
-            padding: 20px;
-            border: 2px solid var(--var-color-tertiary);
+        & .modal-container {
+            width: 95%;
+            padding: 15px;
 
-            & .modal-body {
+            & .modal-cabecera {
 
                 & .modal-title {
+                    font-size: 1.5rem;
+                }
 
-                    & h1 {
-                        flex: auto;
-                    }
+                & button {
+                    font-size: 2.6rem;
                 }
             }
+        }
+    }
+
+    .carrusel-container {
+        height: 400px;
+    }
+}
+
+@media (width < 720px) {
+
+    .carrusel-container {
+        height: 300px;
+    }
+}
+
+@media (width < 500px) {
+
+    .carrusel-container {
+        height: 200px;
+
+        & .btn {
+            font-size: 3rem;
+            position: absolute;
+            top: 40%;
+            height: fit-content;
+
+            & button {
+                margin: 0;
+                padding: 0;
+                color: var(--var-color-secondary);
+                border: none;
+                display: flex;
+                background-color: transparent;
+                cursor: pointer;
+
+            }
+        }
+
+        & .left {
+            left: 0px;
+        }
+
+        & .right {
+            right: 0px;
         }
     }
 }

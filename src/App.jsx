@@ -12,6 +12,7 @@ import { motion } from "framer-motion";
 import { Fondo } from "./components/fondo";
 import { Fade } from "react-awesome-reveal";
 import './App.css'
+import images from './data/images.json';
 
 function linksNone() {
   document.getElementById('linkAbout').style.color = "rgb(255, 255, 255)";
@@ -104,7 +105,6 @@ function App() {
         </div>
       </header>
 
-
       <hr className='separador' />
 
       <Fade>
@@ -113,17 +113,17 @@ function App() {
             <h1>Proyectos</h1>
           </div>
           <div className='projects-container'>
-            <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1159160104977965236/Captura_de_pantalla_2023-10-04_110736.png?ex=651edf79&is=651d8df9&hm=4fa8d3a3c14bbf2d416deef66fb0baf1eefdd3b1bfe9ff3982a9bb89396e6d6a&" github="https://github.com/GonzaloDanielL/ChaloPage" link="https://gonzalodaniell.github.io/ChaloPage/" tipo="enlace" title="ChaloX Page" des="Sitio para mostrar todos mis proyectos personales (esta pagina aun no esta terminada)" tec={["HTML", "CSS", "JavaScript", "ReactJS"]} />
+            <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1159160104977965236/Captura_de_pantalla_2023-10-04_110736.png?ex=651edf79&is=651d8df9&hm=4fa8d3a3c14bbf2d416deef66fb0baf1eefdd3b1bfe9ff3982a9bb89396e6d6a&" github="https://github.com/GonzaloDanielL/ChaloPage" link="https://gonzalodaniell.github.io/ChaloPage/" title="ChaloX Page" des="Sitio para mostrar todos mis proyectos personales (esta pagina aun no esta terminada)" tec={["HTML", "CSS", "JavaScript", "ReactJS"]} />
 
-            <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1157650084859744286/sistemajgya.png?ex=65196128&is=65180fa8&hm=44d910225297ab7698ea7fa349c250633044cc971ac458e143154d0eeaa78274&" tipo="bloqueado" title="Sistema JGyA" des="Proyecto freelancer para la administración de productos como el registro, venta y la compra del mismo, la aplicación también muestra gráficos con los datos registrados" tec={["HTML", "CSS", "PHP", "Bootstrap", "JavaScript", "jQuery", "MySQL"]} />
+            <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1157650084859744286/sistemajgya.png?ex=65196128&is=65180fa8&hm=44d910225297ab7698ea7fa349c250633044cc971ac458e143154d0eeaa78274&" title="Sistema JGyA" des="Proyecto freelancer para la administración de productos como el registro, venta y la compra del mismo, la aplicación también muestra gráficos con los datos registrados" imgs={images.jgya} tec={["HTML", "CSS", "PHP", "Bootstrap", "JavaScript", "jQuery", "MySQL"]} />
 
             <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1157648938120261694/Captura_de_pantalla_2023-09-30_065805.png?ex=65196016&is=65180e96&hm=32023a44ca8ae2c6d5789678ae32fbc67e2ede881d54a7a995c7b0bea6c1898a&" tipo="enlace" link="https://gonzalodaniell.github.io/MealsAndCocktails/" github="https://github.com/GonzaloDanielL/MealsAndCocktails" title="Meals and cocktails" des="Proyecto personal que lista y muestra recetas e ingredientes de comidas y cócteles" tec={["HTML", "CSS", "ReactJS", "JavaScript", "Tailwind CSS"]} />
 
             <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1157649891863048292/Captura_de_pantalla_2023-09-12_123103.png?ex=651960fa&is=65180f7a&hm=76a18601fd7550abffcaacb441f76b687a9ec609510bee9071e7ea1cfad56a9e&" tipo="enlace" link="https://gonzalodaniell.github.io/Anime-Details/" github="https://github.com/GonzaloDanielL/Anime-Details" title="Anime details" des="Proyecto personal que muestra información de animes como capítulos, genero, plataformas de streaming y mas" tec={["HTML", "CSS", "ReactJS", "JavaScript"]} />
 
-            <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1157649891582021713/suscripciones.png?ex=651960fa&is=65180f7a&hm=36f2117ead396706f34c54e59b83f1a4bb10f54e66b6b57fba5bb64c0d0edfb4&" tipo="imagen" github="https://github.com/GonzaloDanielL/Suscripciones" title="Administrar suscripciones" des="Proyecto personal que registra suscripciones y sus proveedores" tec={["HTML", "PHP", "Bootstrap", "JavaScript", "MySQL"]} />
+            <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1157649891582021713/suscripciones.png?ex=651960fa&is=65180f7a&hm=36f2117ead396706f34c54e59b83f1a4bb10f54e66b6b57fba5bb64c0d0edfb4&" tipo="imagen" github="https://github.com/GonzaloDanielL/Suscripciones" title="Administrar suscripciones" des="Proyecto personal que registra suscripciones y sus proveedores" imgs={images.suscripciones} tec={["HTML", "PHP", "Bootstrap", "JavaScript", "MySQL"]} />
 
-            <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1157649891233890314/Boletas.png?ex=651960fa&is=65180f7a&hm=3068f9974a621f835e63a6b005cff63bb2b12e19979a9f73755c74f3779b7e56&" tipo="imagen" github="https://github.com/GonzaloDanielL/AdminCompras" title="Boletas o compras" des="Proyecto personal que registra compras, también muestra gráficos con los datos registrados" tec={["HTML", "PHP", "Bootstrap", "JavaScript", "jQuery", "MySQL"]} />
+            <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1157649891233890314/Boletas.png?ex=651960fa&is=65180f7a&hm=3068f9974a621f835e63a6b005cff63bb2b12e19979a9f73755c74f3779b7e56&" tipo="imagen" github="https://github.com/GonzaloDanielL/AdminCompras" title="Boletas o compras" des="Proyecto personal que registra compras, también muestra gráficos con los datos registrados" imgs={images.compras} tec={["HTML", "PHP", "Bootstrap", "JavaScript", "jQuery", "MySQL"]} />
 
           </div>
 
@@ -164,14 +164,11 @@ function App() {
             <h1>Certificados</h1>
             <div className='certificados-container'>
 
-              <Certificados title="Diseño web responsivo" escuela="FreeCodeCamp" url="https://cdn.discordapp.com/attachments/894744872161017956/1153841650716647444/Captura_de_pantalla_2023-09-19_185421.png" />
+              <Certificados title="Diseño web responsivo" escuela="FreeCodeCamp" url="https://cdn.discordapp.com/attachments/894744872161017956/1153841650716647444/Captura_de_pantalla_2023-09-19_185421.png" img={images.freecode} />
 
-              <Certificados title="Titulo técnico Ig. software con I.A" escuela="SENATI" url="https://cdn.discordapp.com/attachments/894744872161017956/1153848537512153148/Captura_de_pantalla_2023-09-19_192139.png" />
+              <Certificados title="Titulo técnico Ig. software con I.A" escuela="SENATI" url="https://cdn.discordapp.com/attachments/894744872161017956/1153848537512153148/Captura_de_pantalla_2023-09-19_192139.png" img={images.senati} />
 
-              <Certificados title="Desarrollo web I HTML" escuela="Google activate" url="https://cdn.discordapp.com/attachments/894744872161017956/1153848536920756254/Captura_de_pantalla_2023-09-19_192047.png" />
-
-              <Certificados title="Desarrollo web II CSS" escuela="Google activate" url="https://cdn.discordapp.com/attachments/894744872161017956/1153848537193394218/Captura_de_pantalla_2023-09-19_192107.png" />
-
+              <Certificados title="Desarrollo web HTML/CSS" escuela="Google activate" url="https://cdn.discordapp.com/attachments/894744872161017956/1153848536920756254/Captura_de_pantalla_2023-09-19_192047.png" img={images.google} />
             </div>
           </div>
 
@@ -212,7 +209,6 @@ function App() {
           <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="#about">{<AiOutlineArrowUp />}Regresar arriba{<AiOutlineArrowUp />}</motion.a>
         </footer>
       </section>
-
 
     </motion.div>
   )

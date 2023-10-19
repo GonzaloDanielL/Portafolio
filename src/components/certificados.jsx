@@ -1,5 +1,21 @@
+import { useDispatch } from 'react-redux';
+import { changeUrls, changeTitle } from '../redux/userSlice';
 
 export function Certificados(props) {
+    const dispatch = useDispatch();
+
+    function comenzarCarrusel() {
+        let count = 0
+        let slides = document.querySelectorAll('.slide');
+
+        function showSlide(position) {
+            document.getElementById(slides[position].id).style.visibility = 'visible';
+            document.getElementById(slides[position].id).style.opacity = '1';
+        }
+
+        showSlide(count)
+    }
+
     return (
         <div
             className='certificados-card'>
@@ -8,12 +24,10 @@ export function Certificados(props) {
                 <p>Por: {props.escuela}</p>
             </div>
             <div className='cer-card-img'>
-                <button onClick={(e) =>
-                (document.getElementById("modal-title").innerHTML = props.title,
-                    document.getElementById("modal-img").src = props.url,
-                    document.getElementById("modal-url").href = props.url,
-                    document.getElementById("modal").style.visibility = "visible",
-                    document.getElementById("modal").style.opacity = "1")}>
+                <button onClick={() =>
+                (document.getElementById('modal').style.visibility = 'visible',
+                document.getElementById('modal').style.opacity = 1, comenzarCarrusel(),
+                dispatch(changeUrls(props.img)), dispatch(changeTitle(props.title)))}>
                     <img src={props.url} alt="Imagen del certificado..." />
                 </button>
             </div>
