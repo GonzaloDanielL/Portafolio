@@ -32,7 +32,7 @@ h4,
 h5,
 h6 {
     color: var(--var-color-primary);
-    font-family: 'Rubik Dirt', cursive;
+    font-family: 'Lilita One', cursive;
     font-weight: 200;
     z-index: 1;
     cursor: default;
@@ -370,6 +370,7 @@ body::-webkit-scrollbar-thumb {
                     border-bottom: 2px solid transparent;
                     padding-bottom: 6px;
                     transition: all 0.2s ease-in;
+                    color: var(--var-color-tertiary);
                 }
 
                 & a:hover {
@@ -425,9 +426,9 @@ body::-webkit-scrollbar-thumb {
                 color: var(--var-color-tertiary);
 
                 & label {
-                    font-size: var(--var-parrafos-2);
+                    font-size: var(--var-parrafos);
                     display: inline;
-                    font-family: 'Rubik Dirt';
+                    font-family: 'Lilita One';
                     color: var(--var-color-primary);
                 }
 
@@ -857,7 +858,7 @@ body::-webkit-scrollbar-thumb {
     transition: all 0.2s;
 }
 
-@media (width <=1024px) {
+@media (width < 1024px) {
     .main-container {
         padding-left: 10px;
         padding-right: 10px;
