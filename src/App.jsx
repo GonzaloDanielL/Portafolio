@@ -97,7 +97,7 @@ function App() {
               <motion.a whileHover={{ scale: 1.1 }} href="https://github.com/GonzaloDanielL" target="_blank"><AiFillGithub /></motion.a>
               <motion.a whileHover={{ scale: 1.1 }} href="https://www.linkedin.com/in/gonzalo-luna-diaz/" target="_blank"><AiFillLinkedin /></motion.a>
             </div>
-            <a className='boton-cv' href="https://cdn.discordapp.com/attachments/894744872161017956/1165653451351531661/curriculun_vitae.pdf?ex=6547a25f&is=65352d5f&hm=3a3232beae79b1c0c895b13ca37b5d085939fd80fb66fa10fc989e765925cdf9&" target='_blank'>Descargar CV</a>
+            <a className='boton-cv' href="https://cdn.discordapp.com/attachments/894744872161017956/1165664670649176084/curriculun_vitae.pdf?ex=6547acd2&is=653537d2&hm=66eb43393cc3d8cdacb3cefb445b5b10f624db2b9379f3429c9f88d82a1bd07d&" target='_blank'>Descargar CV</a>
           </div>
           <div className='about-body-img'>
             <img src="https://cdn.discordapp.com/attachments/894744872161017956/1164000006391484516/perfil_marca-2.png?ex=65419e7b&is=652f297b&hm=c2072cb7aaabb7381ef9a827a95639bfa0c2359b9ccfc38a3b21b58f2bba590f&" alt="" />
