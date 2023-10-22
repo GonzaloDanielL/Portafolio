@@ -11,7 +11,7 @@ export function Navigation() {
     return (
         <div className="navigation-container" id="navigation-container">
             <nav className="navigation-nav">
-                <h1 className='nav-title'>Gonzalo L.</h1>
+                <h1 className='nav-title'>Gonzalo Luna</h1>
                 <ul className="nav-list-container">
                     <li><a href="#about" id="linkAbout">Acerca de</a></li>
                     <li><a href="#projects" id="linkProjects">Proyectos</a></li>
