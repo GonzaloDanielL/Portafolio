@@ -877,6 +877,7 @@ body::-webkit-scrollbar-thumb {
         padding-top: 0px;
         margin-bottom: 80px;
         height: fit-content;
+        background-color: red;
 
         & .about-body {
             padding-top: 20px;
@@ -903,7 +904,7 @@ body::-webkit-scrollbar-thumb {
 
             & .about-body-img {
                 flex: auto;
-                max-width: 200px;
+                max-width: 300px;
                 justify-content: center;
                 align-items: center;
 
@@ -1091,6 +1092,22 @@ body::-webkit-scrollbar-thumb {
 
     .carrusel-container {
         height: 300px;
+    }
+
+    .c-1 {
+
+        & .about-body {
+
+
+            & .about-body-des {
+                flex: auto;
+
+            }
+
+            & .about-body-img {
+                flex: auto;
+            }
+        }
     }
 }
 
