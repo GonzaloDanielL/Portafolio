@@ -877,7 +877,6 @@ body::-webkit-scrollbar-thumb {
         padding-top: 0px;
         margin-bottom: 80px;
         height: fit-content;
-        background-color: red;
 
         & .about-body {
             padding-top: 20px;
