@@ -212,32 +212,55 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-around;
 
     & .f-item {
-        height: 100px;
-        width: 100px;
+        height: 80px;
+        width: 80px;
         border-radius: 100%;
-        filter: blur(140px);
+        filter: blur(120px);
         background-color: var(--var-color-primary);
     }
 
     & .f1 {
-        animation-duration: 60s;
+        animation-duration: 130s;
         animation-name: fondo1;
         animation-iteration-count: infinite;
-        animation-timing-function: ease-out;
+        animation-timing-function: linear;
     }
 
     & .f2 {
-        animation-duration: 60s;
+        animation-duration: 120s;
         animation-name: fondo2;
         animation-iteration-count: infinite;
-        animation-timing-function: ease-out;
+        animation-timing-function: linear;
     }
 
     & .f3 {
-        animation-duration: 60s;
+        animation-duration: 90s;
         animation-name: fondo3;
         animation-iteration-count: infinite;
-        animation-timing-function: ease-out;
+        animation-timing-function: linear;
+    }
+
+
+
+    & .f6 {
+        animation-duration: 100s;
+        animation-name: fondo2;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    & .f5 {
+        animation-duration: 70s;
+        animation-name: fondo2;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    & .f4 {
+        animation-duration: 100s;
+        animation-name: fondo3;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
     }
 }
 
@@ -245,7 +268,7 @@ body::-webkit-scrollbar-thumb {
 
     0%,
     100% {
-        transform: translateY(-45vh);
+        transform: translateY(-20vh);
     }
 
     50% {
@@ -257,11 +280,11 @@ body::-webkit-scrollbar-thumb {
 
     0%,
     100% {
-        transform: translateY(140vh);
+        transform: translateY(120vh);
     }
 
     50% {
-        transform: translateY(-50vh);
+        transform: translateY(-20vh);
     }
 }
 
@@ -269,11 +292,11 @@ body::-webkit-scrollbar-thumb {
 
     0%,
     100% {
-        transform: translateY(-40vh);
+        transform: translateY(-20vh);
     }
 
     50% {
-        transform: translateY(140vh);
+        transform: translateY(130vh);
     }
 }
 
@@ -471,9 +494,24 @@ body::-webkit-scrollbar-thumb {
                 object-fit: fill;
                 width: 100%;
                 border-radius: 10px;
+                animation: logo 20s ease-in-out infinite;
             }
         }
     }
+}
+
+@keyframes logo {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(160deg);
+    }
+
+
 }
 
 /*====> proyectos */
