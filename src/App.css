@@ -821,8 +821,8 @@ body::-webkit-scrollbar-thumb {
             }
 
             & input {
+                color: var(--var-color-tertiary);
                 flex: auto;
-                color: var(--var-color-secondary);
                 padding: 10px;
                 border-radius: 5px;
                 font-size: var(--var-parrafos-3);
@@ -838,7 +838,7 @@ body::-webkit-scrollbar-thumb {
             }
 
             & textarea {
-                color: var(--var-color-secondary);
+                color: var(--var-color-tertiary);
                 padding: 10px;
                 border-radius: 5px;
                 font-size: var(--var-parrafos-3);
@@ -846,6 +846,7 @@ body::-webkit-scrollbar-thumb {
                 background-color: #6a6a6a7e;
                 border: 1px solid rgb(211, 211, 211);
                 transition: all 0.2s;
+                resize: none;
             }
 
             & .contacto-input-submit {

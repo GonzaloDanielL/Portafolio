@@ -113,7 +113,7 @@ function App() {
             <h1>Proyectos</h1>
           </div>
           <div className='projects-container'>
-            <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1159160104977965236/Captura_de_pantalla_2023-10-04_110736.png?ex=651edf79&is=651d8df9&hm=4fa8d3a3c14bbf2d416deef66fb0baf1eefdd3b1bfe9ff3982a9bb89396e6d6a&" link="https://gonzalodaniell.github.io/ChaloPage/" title="ChaloX" des="Sitio web de los servicios que ofrezco y muestro los proyectos que e realizado hasta el momento" tec={["HTML", "CSS", "JavaScript", "ReactJS"]} />
+            <Project img="https://media.discordapp.net/attachments/894744872161017956/1167082469137330327/Captura_de_pantalla_2023-10-26_074641.png?ex=654cd53f&is=653a603f&hm=ad2476724d1b0b712818af2e493a755470b897109615cf13f6154b3d9d0e6452&=&width=1200&height=557" link="https://chalox.vercel.app/" title="ChaloX" des="Sitio web de los servicios que ofrezco y muestro los proyectos que e realizado hasta el momento" tec={["HTML", "CSS", "JavaScript", "ReactJS"]} />
 
             <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1157650084859744286/sistemajgya.png?ex=65196128&is=65180fa8&hm=44d910225297ab7698ea7fa349c250633044cc971ac458e143154d0eeaa78274&" title="Sistema JGyA" des="Proyecto freelancer para la administración de productos como el registro, venta y la compra del mismo, la aplicación también muestra gráficos con los datos registrados" imgs={images.jgya} tec={["HTML", "CSS", "PHP", "Bootstrap", "JavaScript", "jQuery", "MySQL"]} />
 
