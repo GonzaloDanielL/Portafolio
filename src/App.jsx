@@ -4,10 +4,13 @@ import { Project } from './components/project';
 import { Skill } from './components/skill';
 import { Certificados } from './components/certificados';
 import { Modal } from './components/modal';
+
 import { AiFillHtml5, AiOutlineArrowUp, AiFillGithub, AiFillLinkedin } from 'react-icons/AI';
 import { IoLogoCss3 } from 'react-icons/io';
-import { BiLogoJavascript, BiLogoReact, BiLogoTailwindCss } from 'react-icons/bi';
+import { BiLogoJavascript, BiLogoReact, BiLogoTailwindCss, BiLogoWordpress } from 'react-icons/bi';
 import { SiPhp, SiMysql, SiBootstrap } from 'react-icons/si';
+import { BsWordpress } from 'react-icons/bs';
+
 import { motion } from "framer-motion";
 import { Fondo } from "./components/fondo";
 import { Fade } from "react-awesome-reveal";
@@ -121,6 +124,8 @@ function App() {
 
             <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1157649891863048292/Captura_de_pantalla_2023-09-12_123103.png?ex=651960fa&is=65180f7a&hm=76a18601fd7550abffcaacb441f76b687a9ec609510bee9071e7ea1cfad56a9e&" tipo="enlace" link="https://gonzalodaniell.github.io/Anime-Details/" github="https://github.com/GonzaloDanielL/Anime-Details" title="Anime details" des="Proyecto personal que muestra información de animes como capítulos, genero, plataformas de streaming y mas" tec={["HTML", "CSS", "ReactJS", "JavaScript"]} />
 
+            <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1168990508958367844/wordpress-site.png?ex=6553c640&is=65415140&hm=da46b7297082941202c585cef28846f50d552195cb43119e3122d02b7d582504&" title="Juegos tradicionales" des="Proyecto personal hecho en WordPress sobre juegos tradicionales para niños" link="https://juegostradicionales4.wordpress.com/" tec={["WordPress"]} />
+
             <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1157649891582021713/suscripciones.png?ex=651960fa&is=65180f7a&hm=36f2117ead396706f34c54e59b83f1a4bb10f54e66b6b57fba5bb64c0d0edfb4&" tipo="imagen" github="https://github.com/GonzaloDanielL/Suscripciones" title="Administrar suscripciones" des="Proyecto personal que registra suscripciones y sus proveedores" imgs={images.suscripciones} tec={["HTML", "PHP", "Bootstrap", "JavaScript", "MySQL"]} />
 
             <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1157649891233890314/Boletas.png?ex=651960fa&is=65180f7a&hm=3068f9974a621f835e63a6b005cff63bb2b12e19979a9f73755c74f3779b7e56&" tipo="imagen" github="https://github.com/GonzaloDanielL/AdminCompras" title="Boletas o compras" des="Proyecto personal que registra compras, también muestra gráficos con los datos registrados" imgs={images.compras} tec={["HTML", "PHP", "Bootstrap", "JavaScript", "jQuery", "MySQL"]} />
@@ -156,6 +161,8 @@ function App() {
               <Skill img={<SiMysql />} color="rgb(0, 108, 202)" />
 
               <Skill img={<SiBootstrap />} color="rgb(109, 0, 243)" />
+
+              <Skill img={<BsWordpress />} color="rgb(0, 208, 245)"/>
 
             </div>
           </div>
