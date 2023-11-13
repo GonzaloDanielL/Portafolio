@@ -124,11 +124,14 @@ function App() {
 
             <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1157649891863048292/Captura_de_pantalla_2023-09-12_123103.png?ex=651960fa&is=65180f7a&hm=76a18601fd7550abffcaacb441f76b687a9ec609510bee9071e7ea1cfad56a9e&" tipo="enlace" link="https://gonzalodaniell.github.io/Anime-Details/" github="https://github.com/GonzaloDanielL/Anime-Details" title="Anime details" des="Proyecto personal que muestra información de animes como capítulos, genero, plataformas de streaming y mas" tec={["HTML", "CSS", "ReactJS", "JavaScript"]} />
 
+            
+            <Project img="https://media.discordapp.net/attachments/894744872161017956/1173677001727541378/Captura_de_pantalla_2023-11-13_123046.png?ex=6564d2e3&is=65525de3&hm=f3c53430753fabf4ecff6fb27aaefcb64092eed57b77054b43dbb238b92ddd3b&=&width=1449&height=687" tipo="enlace" link="https://gonzalodaniell.github.io/MocozinSitio.github.io/" title="MocozinPage" des="Pagina web para mostrar algunas características de un videojuego" tec={["HTML", "CSS"]} />
+
             <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1168990508958367844/wordpress-site.png?ex=6553c640&is=65415140&hm=da46b7297082941202c585cef28846f50d552195cb43119e3122d02b7d582504&" title="Juegos tradicionales" des="Proyecto personal hecho en WordPress sobre juegos tradicionales para niños" link="https://juegostradicionales4.wordpress.com/" tec={["WordPress"]} />
 
-            <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1157649891582021713/suscripciones.png?ex=651960fa&is=65180f7a&hm=36f2117ead396706f34c54e59b83f1a4bb10f54e66b6b57fba5bb64c0d0edfb4&" tipo="imagen" github="https://github.com/GonzaloDanielL/Suscripciones" title="Administrar suscripciones" des="Proyecto personal que registra suscripciones y sus proveedores" imgs={images.suscripciones} tec={["HTML", "PHP", "Bootstrap", "JavaScript", "MySQL"]} />
+{/*             <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1157649891582021713/suscripciones.png?ex=651960fa&is=65180f7a&hm=36f2117ead396706f34c54e59b83f1a4bb10f54e66b6b57fba5bb64c0d0edfb4&" tipo="imagen" github="https://github.com/GonzaloDanielL/Suscripciones" title="Administrar suscripciones" des="Proyecto personal que registra suscripciones y sus proveedores" imgs={images.suscripciones} tec={["HTML", "PHP", "Bootstrap", "JavaScript", "MySQL"]} />
 
-            <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1157649891233890314/Boletas.png?ex=651960fa&is=65180f7a&hm=3068f9974a621f835e63a6b005cff63bb2b12e19979a9f73755c74f3779b7e56&" tipo="imagen" github="https://github.com/GonzaloDanielL/AdminCompras" title="Boletas o compras" des="Proyecto personal que registra compras, también muestra gráficos con los datos registrados" imgs={images.compras} tec={["HTML", "PHP", "Bootstrap", "JavaScript", "jQuery", "MySQL"]} />
+            <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1157649891233890314/Boletas.png?ex=651960fa&is=65180f7a&hm=3068f9974a621f835e63a6b005cff63bb2b12e19979a9f73755c74f3779b7e56&" tipo="imagen" github="https://github.com/GonzaloDanielL/AdminCompras" title="Boletas o compras" des="Proyecto personal que registra compras, también muestra gráficos con los datos registrados" imgs={images.compras} tec={["HTML", "PHP", "Bootstrap", "JavaScript", "jQuery", "MySQL"]} /> */}
 
           </div>
 
@@ -162,7 +165,7 @@ function App() {
 
               <Skill img={<SiBootstrap />} color="rgb(109, 0, 243)" />
 
-              <Skill img={<BsWordpress />} color="rgb(0, 208, 245)"/>
+              <Skill img={<BsWordpress />} color="rgb(0, 208, 245)" />
 
             </div>
           </div>
