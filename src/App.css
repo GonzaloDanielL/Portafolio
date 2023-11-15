@@ -1,8 +1,8 @@
 :root {
-    --var-color-primary: rgb(227, 114, 0);
-    --var-color-secondary: rgb(255, 191, 16);
-    --var-color-tertiary: rgb(255, 255, 255);
-    --var-bg-card: #2a2a2a;
+    --var-color-primary: #e37200;
+    --var-color-secondary: #ffbf10;
+    --var-color-tertiary: #ffffff;
+    --var-bg-card: #2f2f2f;
     --var-bg: #202020;
     --var-titulos: 3rem;
     --var-subtitulos: 2rem;
@@ -106,7 +106,6 @@ body::-webkit-scrollbar-thumb {
     transition: all 0.3s ease-in;
 
     & .modal-container {
-        border: 1px solid var(--var-color-tertiary);
         background-color: var(--var-bg-card);
         width: 70%;
         border-radius: 10px;
@@ -545,7 +544,7 @@ body::-webkit-scrollbar-thumb {
             position: relative;
             width: 300px;
             height: auto;
-            border: 2px solid rgb(211, 211, 211);
+     
             color: var(--var-color-secondary);
             border-radius: 10px;
             background-color: var(--var-bg-card);
@@ -702,7 +701,6 @@ body::-webkit-scrollbar-thumb {
 
             & .certificados-card {
                 border-radius: 10px;
-                border: 2px solid rgb(211, 211, 211);
                 background-color: var(--var-bg-card);
                 padding: 20px;
                 display: flex;
@@ -722,8 +720,11 @@ body::-webkit-scrollbar-thumb {
                         font-size: var(--var-parrafos-2);
                     }
 
-                    & p {
-                        font-size: var(--var-parrafos-3);
+                    & span {
+                        width: fit-content;
+                        padding: 10px;
+                        background-color: var(--var-bg);
+                        border-radius: 10px;
                         color: var(--var-color-secondary);
                     }
                 }
@@ -763,9 +764,8 @@ body::-webkit-scrollbar-thumb {
             & .skill-card {
                 width: 100px;
                 height: 100px;
-                border: 2px solid rgb(255, 255, 255);
                 border-radius: 10px;
-                background-color: #ffffff;
+                background-color: var(--var-bg-card);
                 text-align: center;
                 padding: 5px;
 
@@ -804,7 +804,6 @@ body::-webkit-scrollbar-thumb {
         min-width: 400px;
         padding: 20px;
         border-radius: 10px;
-        border: 2px solid rgb(211, 211, 211);
         background-color: var(--var-bg-card);
 
         & .contacto-form {
@@ -815,7 +814,7 @@ body::-webkit-scrollbar-thumb {
             & label {
                 width: fit-content;
                 font-size: var(--var-parrafos-2);
-                color: var(--var-color-tertiary);
+                color: var(--var-color-primary);
                 padding-top: 10px;
             }
 
@@ -826,8 +825,8 @@ body::-webkit-scrollbar-thumb {
                 border-radius: 5px;
                 font-size: var(--var-parrafos-3);
                 outline: none;
-                background-color: #6a6a6a7e;
-                border: 1px solid rgb(211, 211, 211);
+                background-color: var(--var-bg);
+                border: none;
                 transition: all 0.2s;
             }
 
@@ -842,8 +841,8 @@ body::-webkit-scrollbar-thumb {
                 border-radius: 5px;
                 font-size: var(--var-parrafos-3);
                 outline: none;
-                background-color: #6a6a6a7e;
-                border: 1px solid rgb(211, 211, 211);
+                background-color: var(--var-bg);
+                border: none;
                 transition: all 0.2s;
                 resize: none;
             }

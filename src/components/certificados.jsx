@@ -21,7 +21,7 @@ export function Certificados(props) {
             className='certificados-card'>
             <div className='cer-card-title'>
                 <h2>{props.title}</h2>
-                <p>Por: {props.escuela}</p>
+                <span>Por: {props.escuela}</span>
             </div>
             <div className='cer-card-img'>
                 <button onClick={() =>
