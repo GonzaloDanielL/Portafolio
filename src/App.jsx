@@ -6,8 +6,8 @@ import { Certificados } from './components/certificados';
 import { Modal } from './components/modal';
 
 import { AiFillHtml5, AiOutlineArrowUp, AiFillGithub, AiFillLinkedin } from 'react-icons/AI';
-import { IoLogoCss3 } from 'react-icons/io';
-import { BiLogoJavascript, BiLogoReact, BiLogoTailwindCss, BiLogoWordpress } from 'react-icons/bi';
+import { IoLogoCss3, IoLogoWhatsapp } from 'react-icons/io';
+import { BiLogoJavascript, BiLogoReact, BiLogoTailwindCss, BiLogoGmail } from 'react-icons/bi';
 import { SiPhp, SiMysql, SiBootstrap } from 'react-icons/si';
 import { BsWordpress } from 'react-icons/bs';
 
@@ -17,6 +17,7 @@ import { Fade } from "react-awesome-reveal";
 import './App.css'
 import images from './data/images.json';
 
+/* links sin estilos de la barra de navegación */
 function linksNone() {
   document.getElementById('linkAbout').style.color = "rgb(255, 255, 255)";
   document.getElementById('linkProjects').style.color = "rgb(255, 255, 255)";
@@ -24,6 +25,7 @@ function linksNone() {
   document.getElementById('linkContacto').style.color = "rgb(255, 255, 255)";
 }
 
+/* asignar estilos al link de la barra de navegación */
 function linksstyle(et) {
   document.getElementById(et).style.color = "rgb(227, 114, 0)";
 }
@@ -33,10 +35,12 @@ function App() {
     linksstyle('linkAbout');
   }, [])
 
+  // detectar cambio del scroll
   window.onscroll = () => {
     let div = document.getElementById('about').getBoundingClientRect().bottom;
     let divtop = document.getElementById('about').getBoundingClientRect().top;
 
+    // cambio de estilo de la negación 
     if (document.getElementById('about').getBoundingClientRect().bottom > 400) {
       linksNone();
       linksstyle('linkAbout');
@@ -44,17 +48,14 @@ function App() {
     } else if (document.getElementById('projects').getBoundingClientRect().bottom > 400) {
       linksNone();
       linksstyle('linkProjects');
-      /*   document.getElementById('projects').classList.add("elemto-scroll-2"); */
 
     } else if (document.getElementById('skills').getBoundingClientRect().bottom > 400) {
       linksNone();
       linksstyle('linkSkills');
-      /*  document.getElementById('skills').classList.add("elemto-scroll-2"); */
 
     } else if (document.getElementById('contacto').getBoundingClientRect().bottom > 400) {
       linksNone();
       linksstyle('linkContacto');
-      /*     document.getElementById('contacto').classList.add("elemto-scroll-2"); */
     }
 
     if (div > 500) {
@@ -86,7 +87,7 @@ function App() {
       <Fondo />
       <Modal />
 
-
+      {/* section de información sobre mi */}
       <header className='sub-container c-1' id='about'>
         <div className='about-body'>
           <div className='about-body-des'>
@@ -98,19 +99,36 @@ function App() {
 
             </p>
             <div className='about-body-contact'>
-              <motion.a whileHover={{ scale: 1.1 }} href="https://github.com/GonzaloDanielL" target="_blank"><AiFillGithub /></motion.a>
-              <motion.a whileHover={{ scale: 1.1 }} href="https://www.linkedin.com/in/gonzalo-luna-diaz/" target="_blank"><AiFillLinkedin /></motion.a>
-              <a className='boton-cv' href="https://cdn.discordapp.com/attachments/894744872161017956/1165664670649176084/curriculun_vitae.pdf?ex=6547acd2&is=653537d2&hm=66eb43393cc3d8cdacb3cefb445b5b10f624db2b9379f3429c9f88d82a1bd07d&" target='_blank'>Descargar CV</a>
+              <motion.a
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                href="https://wa.me/51931262053" target='_blank'><IoLogoWhatsapp /></motion.a>
+              <motion.a
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }} href="https://github.com/GonzaloDanielL" target="_blank"><AiFillGithub /></motion.a>
+              <motion.a
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }} href="https://www.linkedin.com/in/gonzalo-luna-diaz/" target="_blank"><AiFillLinkedin /></motion.a>
+              <motion.a
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }} className='boton-cv' href="https://cdn.discordapp.com/attachments/894744872161017956/1165664670649176084/curriculun_vitae.pdf?ex=6547acd2&is=653537d2&hm=66eb43393cc3d8cdacb3cefb445b5b10f624db2b9379f3429c9f88d82a1bd07d&" target='_blank'>Descargar CV</motion.a>
             </div>
           </div>
           <div className='about-body-img'>
-            <img src="https://media.discordapp.net/attachments/894744872161017956/1164000006391484516/perfil_marca-2.png?ex=6566887b&is=6554137b&hm=62d2a1f95a57d61e2bba185a65b34ee2b1b44ff6f5a6d630b739984d6518e999&=&width=910&height=889" alt="" />
+            <img src="https://media.discordapp.net/attachments/894744872161017956/1164000006391484516/perfil_marca-2.png?ex=6566887b&is=6554137b&hm=62d2a1f95a57d61e2bba185a65b34ee2b1b44ff6f5a6d630b739984d6518e999&=&width=910&height=889" alt="Chalox Logo" />
           </div>
         </div>
       </header>
 
-       <hr className='separador' /> 
+      <hr className='separador' />
 
+      {/*       <Fade>
+        <section className='sub-container c-6 experiencia' id='experiencia'>
+
+        </section>
+      </Fade> */}
+
+      {/* section de los proyectos */}
       <Fade>
         <section className='sub-container c-2 projects' id='projects'>
           <div className='projects-title'>
@@ -138,7 +156,7 @@ function App() {
         </section>
       </Fade>
 
-
+      {/* section de habilidades y certificados */}
       <Fade>
         <section className='sub-container c-3' id='skills'>
 
@@ -186,7 +204,7 @@ function App() {
         </section>
       </Fade>
 
-
+      {/* section de contacto */}
       <Fade>
         <section className='sub-container c-4' id="contacto">
 
@@ -194,31 +212,65 @@ function App() {
             <h1>Contácteme</h1>
           </div>
 
-          <div className='contacto-body'>
-            <form action="https://formsubmit.co/gonzaloluna738@gmail.com" method="post" className='contacto-form'>
+          <div className='contacto-contenido'>
+            <div className='sub-contacto'>
+              <h2>Formulario</h2>
+              <form action="https://formsubmit.co/gonzaloluna738@gmail.com" method="post" className='contacto-form'>
 
-              <label htmlFor="name">Nombre: </label>
-              <input id="name" name="name" type="text" />
+                <label htmlFor="name">Nombre: </label>
+                <input id="name" name="name" type="text" />
 
-              <label htmlFor="email">Email: </label>
-              <input id="email" name="email" type="text" />
+                <label htmlFor="email">Email: </label>
+                <input id="email" name="email" type="text" />
 
-              <label htmlFor="description">Descripción: </label>
-              <textarea id="description" name="description" type="text"></textarea>
+                <label htmlFor="description">Descripción: </label>
+                <textarea id="description" name="description" type="text"></textarea>
 
-              <input name="Submit" className='contacto-input-submit' type="submit" value="Enviar" />
+                <input name="Submit" className='contacto-input-submit' type="submit" value="Enviar" />
 
-            </form>
+              </form>
+            </div>
+            <div className='sub-contacto'>
+              <h2>Redes Sociales</h2>
+              <div className='redes-contenedor'>
+                <div className='redes-correo'>
+                  <BiLogoGmail /><p>gonzaloluna738@gmail.com</p>
+                </div>
+                <div className='redes-links'>
+                  <motion.a
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                    href="https://wa.me/51931262053" target='_blank'><IoLogoWhatsapp /></motion.a>
+
+                  <motion.a
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                    href="https://www.linkedin.com/in/gonzalo-luna-diaz/" target='_blank'><AiFillLinkedin /></motion.a>
+
+                  <motion.a
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                    href="https://github.com/GonzaloDanielL" target='_blank'><AiFillGithub /></motion.a>
+                </div>
+              </div>
+            </div>
           </div>
 
         </section>
       </Fade>
 
-       <hr className='separador' />  
-
+      <hr className='separador' />
+      
+      {/* pie de pagina */}
       <section className='sub-container c-5'>
         <footer className='footer-container'>
-          <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="#about">{<AiOutlineArrowUp />}Regresar arriba{<AiOutlineArrowUp />}</motion.a>
+          {/*           <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="#about">{<AiOutlineArrowUp />}Regresar arriba{<AiOutlineArrowUp />}</motion.a> */}
+          <div className='footer-cp'>
+            <span>Gonzalo Luna © 2023</span>
+          </div>
+          <a className='footer-img' href='https://chalox.vercel.app/' target='_blank'>
+            <img src="https://media.discordapp.net/attachments/894744872161017956/1164000006391484516/perfil_marca-2.png?ex=6566887b&is=6554137b&hm=62d2a1f95a57d61e2bba185a65b34ee2b1b44ff6f5a6d630b739984d6518e999&=&width=910&height=889" alt="Chalox Logo" />
+          </a>
         </footer>
       </section>
 
