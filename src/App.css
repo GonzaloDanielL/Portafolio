@@ -69,18 +69,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .main-container {
-    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     position: relative;
     z-index: 1;
-    padding-left: 18%;
-    padding-right: 18%;
     overflow-x: hidden;
-}
-
-.sub-container {
-    margin: 0 auto;
 }
 
 .separador {
@@ -307,24 +302,22 @@ body::-webkit-scrollbar-thumb {
     left: 0;
     top: 0;
     position: fixed;
-    background-color: #433d3d00;
-    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
     transition: all 0.4s;
 
     & .navigation-nav {
-        padding: 15px;
+        max-width: 60rem;
+        margin: 0 auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
         display: flex;
         flex-direction: row;
-
 
         & .nav-title {
             font-size: 3.2rem;
             flex: auto;
-
         }
 
         & .nav-list-container {
@@ -414,17 +407,15 @@ body::-webkit-scrollbar-thumb {
 
 /*====> about*/
 .c-1 {
-    margin-bottom: 90px;
-    padding-top: 90px;
-    height: 90vh;
+    margin-bottom: 100px;
+    padding-top: 150px;
     display: flex;
     flex-direction: column;
-    width: 100%;
 
     & .about-body {
         flex: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
         gap: 40px;
@@ -456,21 +447,6 @@ body::-webkit-scrollbar-thumb {
 
             }
 
-            & .boton-cv {
-                font-size: 1.1rem;
-                text-decoration: none;
-                background-color: var(--var-color-primary);
-                width: fit-content;
-                color: var(--var-color-tertiary);
-                padding: 8px;
-                border-radius: 10px;
-                transition: transform 0.2s;
-            }
-
-            & .boton-cv:hover {
-                transform: scale(1.1);
-            }
-
             & .about-body-contact {
                 display: flex;
                 gap: 20px;
@@ -481,6 +457,26 @@ body::-webkit-scrollbar-thumb {
                     font-size: 2.8rem;
                     transition: border-bottom 0.2s ease-in;
                     color: var(--var-color-primary);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                & .boton-cv {
+                    margin-top: 5px;
+                    font-size: 1.1rem;
+                    height: fit-content;
+                    text-decoration: none;
+                    background-color: var(--var-color-primary);
+                    width: fit-content;
+                    color: var(--var-color-tertiary);
+                    padding: 8px;
+                    border-radius: 10px;
+                    transition: transform 0.2s;
+                }
+    
+                & .boton-cv:hover {
+                    transform: scale(1.1);
                 }
             }
         }
@@ -544,7 +540,7 @@ body::-webkit-scrollbar-thumb {
             position: relative;
             width: 300px;
             height: auto;
-     
+
             color: var(--var-color-secondary);
             border-radius: 10px;
             background-color: var(--var-bg-card);
@@ -1120,7 +1116,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (width < 720px) {
-
     .carrusel-container {
         height: 300px;
     }
@@ -1143,7 +1138,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (width < 500px) {
-
     .carrusel-container {
         height: 200px;
 
@@ -1175,7 +1169,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .c-4 {
-        
+
         & .contacto-body {
             min-width: auto;
             max-width: 300px;

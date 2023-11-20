@@ -67,7 +67,7 @@ function App() {
     }
 
     if (divtop < -80) {
-      document.getElementById('navigation-container').style.backgroundColor = '#433d3d98';
+      document.getElementById('navigation-container').style.backgroundColor = '#2f2f2f';
 
     } else {
       document.getElementById('navigation-container').style.backgroundColor = '#433d3d00';
@@ -92,23 +92,24 @@ function App() {
           <div className='about-body-des'>
             <h1>Gonzalo Luna</h1>
             <p>
-              Hola 👋 soy <label>Gonzalo </label>un apasionado desarrollador web junior, siempre dispuesto a seguir aprendiendo y enfrentar nuevos desafíos.<br /><br />
-              Egresado y titulado de la carrera técnica de ingeniero de software en el cual aprendí muchas cosas sobre el mundo de la programación, actualmente estoy mejorando de manera autodidacta mis habilidades en el desarrollo web.
-              <br /><br />
+              Hola 👋 soy <label>Gonzalo </label>un apasionado desarrollador web junior, siempre dispuesto a seguir aprendiendo y enfrentar nuevos desafíos. <br /><br />
+
+              Egresado y titulado de la carrera técnica de ingeniero de software en el cual aprendí muchas cosas sobre el mundo de la programación, actualmente estoy mejorando de manera autodidacta mis habilidades en el desarrollo web. <br /><br />
+
             </p>
             <div className='about-body-contact'>
               <motion.a whileHover={{ scale: 1.1 }} href="https://github.com/GonzaloDanielL" target="_blank"><AiFillGithub /></motion.a>
               <motion.a whileHover={{ scale: 1.1 }} href="https://www.linkedin.com/in/gonzalo-luna-diaz/" target="_blank"><AiFillLinkedin /></motion.a>
+              <a className='boton-cv' href="https://cdn.discordapp.com/attachments/894744872161017956/1165664670649176084/curriculun_vitae.pdf?ex=6547acd2&is=653537d2&hm=66eb43393cc3d8cdacb3cefb445b5b10f624db2b9379f3429c9f88d82a1bd07d&" target='_blank'>Descargar CV</a>
             </div>
-            <a className='boton-cv' href="https://cdn.discordapp.com/attachments/894744872161017956/1165664670649176084/curriculun_vitae.pdf?ex=6547acd2&is=653537d2&hm=66eb43393cc3d8cdacb3cefb445b5b10f624db2b9379f3429c9f88d82a1bd07d&" target='_blank'>Descargar CV</a>
           </div>
           <div className='about-body-img'>
-            <img src="https://cdn.discordapp.com/attachments/894744872161017956/1164000006391484516/perfil_marca-2.png?ex=65419e7b&is=652f297b&hm=c2072cb7aaabb7381ef9a827a95639bfa0c2359b9ccfc38a3b21b58f2bba590f&" alt="" />
+            <img src="https://media.discordapp.net/attachments/894744872161017956/1164000006391484516/perfil_marca-2.png?ex=6566887b&is=6554137b&hm=62d2a1f95a57d61e2bba185a65b34ee2b1b44ff6f5a6d630b739984d6518e999&=&width=910&height=889" alt="" />
           </div>
         </div>
       </header>
 
-      <hr className='separador' />
+       <hr className='separador' /> 
 
       <Fade>
         <section className='sub-container c-2 projects' id='projects'>
@@ -128,7 +129,7 @@ function App() {
 
             <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1168990508958367844/wordpress-site.png?ex=6553c640&is=65415140&hm=da46b7297082941202c585cef28846f50d552195cb43119e3122d02b7d582504&" title="Juegos tradicionales" des="Proyecto personal hecho en WordPress sobre juegos tradicionales para niños" link="https://juegostradicionales4.wordpress.com/" tec={["WordPress"]} />
 
-{/*             <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1157649891582021713/suscripciones.png?ex=651960fa&is=65180f7a&hm=36f2117ead396706f34c54e59b83f1a4bb10f54e66b6b57fba5bb64c0d0edfb4&" tipo="imagen" github="https://github.com/GonzaloDanielL/Suscripciones" title="Administrar suscripciones" des="Proyecto personal que registra suscripciones y sus proveedores" imgs={images.suscripciones} tec={["HTML", "PHP", "Bootstrap", "JavaScript", "MySQL"]} />
+            {/*             <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1157649891582021713/suscripciones.png?ex=651960fa&is=65180f7a&hm=36f2117ead396706f34c54e59b83f1a4bb10f54e66b6b57fba5bb64c0d0edfb4&" tipo="imagen" github="https://github.com/GonzaloDanielL/Suscripciones" title="Administrar suscripciones" des="Proyecto personal que registra suscripciones y sus proveedores" imgs={images.suscripciones} tec={["HTML", "PHP", "Bootstrap", "JavaScript", "MySQL"]} />
 
             <Project img="https://cdn.discordapp.com/attachments/894744872161017956/1157649891233890314/Boletas.png?ex=651960fa&is=65180f7a&hm=3068f9974a621f835e63a6b005cff63bb2b12e19979a9f73755c74f3779b7e56&" tipo="imagen" github="https://github.com/GonzaloDanielL/AdminCompras" title="Boletas o compras" des="Proyecto personal que registra compras, también muestra gráficos con los datos registrados" imgs={images.compras} tec={["HTML", "PHP", "Bootstrap", "JavaScript", "jQuery", "MySQL"]} /> */}
 
@@ -136,6 +137,7 @@ function App() {
 
         </section>
       </Fade>
+
 
       <Fade>
         <section className='sub-container c-3' id='skills'>
@@ -184,6 +186,7 @@ function App() {
         </section>
       </Fade>
 
+
       <Fade>
         <section className='sub-container c-4' id="contacto">
 
@@ -211,7 +214,7 @@ function App() {
         </section>
       </Fade>
 
-      <hr className='separador' />
+       <hr className='separador' />  
 
       <section className='sub-container c-5'>
         <footer className='footer-container'>
