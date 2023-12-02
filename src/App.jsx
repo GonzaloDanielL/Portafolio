@@ -95,7 +95,7 @@ function App() {
             <p>
               Hola 👋 soy <label>Gonzalo </label>un apasionado desarrollador web junior, siempre dispuesto a seguir aprendiendo y enfrentar nuevos desafíos. <br /><br />
 
-              Egresado y titulado de la carrera técnica de ingeniero de software en el cual aprendí muchas cosas sobre el mundo de la programación, actualmente estoy mejorando de manera autodidacta mis habilidades en el desarrollo web. <br /><br />
+              Soy egresado y titulado de la carrera técnica de ingeniero de software en el cual aprendí muchas cosas sobre el mundo de la programación, actualmente estoy mejorando de manera autodidacta mis habilidades en el desarrollo web. <br /><br />
 
             </p>
             <div className='about-body-contact'>
