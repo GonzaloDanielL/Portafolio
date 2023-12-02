@@ -93,10 +93,8 @@ function App() {
           <div className='about-body-des'>
             <h1>Gonzalo Luna</h1>
             <p>
-              Hola 👋 soy <label>Gonzalo </label>un apasionado desarrollador web junior, siempre dispuesto a seguir aprendiendo y enfrentar nuevos desafíos. <br /><br />
-
-              Soy egresado y titulado de la carrera técnica de ingeniero de software en el cual aprendí muchas cosas sobre el mundo de la programación, actualmente estoy mejorando de manera autodidacta mis habilidades en el desarrollo web. <br /><br />
-
+              ¡Hola! 👋 Soy <label>Gonzalo</label>, un apasionado desarrollador web junior con una sólida formación técnica como ingeniero de software. Durante mi trayectoria académica, adquirí un amplio conocimiento en el fascinante mundo de la programación.<br /><br />
+              En la actualidad, dedico mi tiempo de manera autodidacta para perfeccionar mis habilidades en el desarrollo web. Estoy emocionado por continuar mi crecimiento y aportar mi experiencia a proyectos innovadores.<br /><br />
             </p>
             <div className='about-body-contact'>
               <motion.a
@@ -260,7 +258,7 @@ function App() {
       </Fade>
 
       <hr className='separador' />
-      
+
       {/* pie de pagina */}
       <section className='sub-container c-5'>
         <footer className='footer-container'>
